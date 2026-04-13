@@ -1,7 +1,7 @@
 <h1 align="center"> Final Fantasy XII: Revenant Job System (PS2) </h1>
 
 <p align="center">
-  <img src="images/final-logo.png" alt="Logo">
+  <img src="images/final-logo.png" alt="Logo" width="600">
 </p>
 
 ## Overview
