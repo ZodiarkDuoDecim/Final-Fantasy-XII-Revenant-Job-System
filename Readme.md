@@ -203,3 +203,4 @@ Every gameplay system, rebalance, and implementation was created specifically fo
 - **Paulo Ítalo** & **João** — Weapon restoration ideas.
 - **MidnightZR** & **KellueHaze** — Extensive testing and project support.
 - **Mikachuuu** — Gemini Plus assistance and brainstorming.
+- **Leandro Kuogetsu** — ChatGPT Plus and Help.
