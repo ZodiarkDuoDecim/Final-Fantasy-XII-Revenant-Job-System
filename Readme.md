@@ -1,7 +1,7 @@
 <h1 align="center"> Final Fantasy XII: Revenant Job System v3.5 (PS2 Version) </h1>
 
 <p align="center">
-  <img src="images/final-logo.png" alt="Logo" width="600">
+  <img src="images/RJS%203.5%20Banner%20New.png" alt="Final Fantasy XII: Revenant Job System v3.5" width="465">
 </p>
 
 ## Overview
