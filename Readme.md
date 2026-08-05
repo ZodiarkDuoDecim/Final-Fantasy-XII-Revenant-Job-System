@@ -18,12 +18,9 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 - **New Exclusive Skills & Spells:** Characters now possess unique Innate Skills right from the start, independent of their chosen Job.
 - **Magicks Overhaul:** The entire set of Magicks has been renewed and correctly described.
 - **Stats Explosion!** Attribute growth significantly increases after Level 50 to prepare your party for the toughest endgame enemies.
-- **Harder Bosses:** Get ready for a real challenge.
-- **New Enemies:** Face off against deadly new foes such as Doppelgangers!
+- **Harder Bosses:** Get ready for a real che.alleng
 - **Vital Stealing:** Robbing special enemies and bosses is now super important for high-tier equipment!
 - **New Balanced Shops:** Customized shops built specifically for the mod! With great power comes great responsibility!
-- **New Menus Translation:** The UI is now fully rebranded to FFXII RJS.
-
 
 ## Installation
 
@@ -34,7 +31,7 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 5. Rename the ISO file to `ff12zj.iso`.
 6. Run `patch.exe` to inject the mod files from `bin_izjs` into `ff12zj.iso`.
 
-After the process is complete, open the modified ISO with an emulator of your choice. If the installation was successful, you will see the new title screen.
+After the process is complete, open the modified ISO with an emulator or play with OPL as your option. If the installation was successful, you will see the new title screen.
 
 
 ## Ownership & Permissions
@@ -53,5 +50,5 @@ All content was created manually and thoroughly tested by myself.
 - [Akita](https://www.nexusmods.com/profile/Akita1957) & [Shrimpman](https://www.nexusmods.com/profile/SShrimpman) – for beta testing.
 - [FehDead](https://www.nexusmods.com/profile/fehdead) – for support and ideas.
 - Paulo Ítalo & João – for ideas such as restoring classic weapons like the Holy Katana and Mutsunokami.
+- MidnightZR & Kelluehaze - for being the special testers members and supply of all long of the project.
 - Mikachuuu – for assistance with Gemini Plus and brainstorming.
-- vsub – for sharing save data.
