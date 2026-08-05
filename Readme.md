@@ -14,7 +14,7 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 - **Overhauled Ammunition!** Prepare youself with the new effects from the ammunations, archery and bombs from the game, such as Holy Arrows, Holy Shot or DARK ~ Chaos Bombs for your Piercing and Unique Hand-Bomb Blassty Weapon!
 - **Ninja Swords** are now One-Handed Weapons!
 - **Accessories Overhaul!** Every single accessory in the game has been altered with different stats, making each one a unique and strategic choice for your builds!
-- **The 12 Job Classes Renewed, possible now use all Espers on any job without losing anything, or have exclusivity like Bless Knight being possible use Hero's Blade or Flick Sniper possible using Seiten-Taisei!
+- **The 12 Job Classes Renewed**, possible now use all Espers on any job without losing anything, or have exclusivity like Bless Knight being possible use Hero's Blade or Flick Sniper possible using Seiten-Taisei!
 - **New Exclusive Skills & Spells:** Characters now possess unique Innate Skills right from the start, independent of their chosen Job.
 - **Magicks & Technickes Overhaul:** The Entire set of Magicks, Technickes has been Overhauled and Remade, with 3/4 Levels of Each Elemental Magick (Earth has 3), like Ice Break, Quake, Pyromance, or Deluge (enemies that possued that magicks lose for the good of progress), you can even Play using, Water, Watera, Waterga, Aero, Aerora, Aeoroga (4 - Deluge - Tempest), You can even use Technickes like All-Out - a Powerfull Powerhouse Attack with Piercing Effect of % that ignores Enemie Defense, Evasion and Ect.
 - **Harder Bosses:** Get ready for a Elegant way of Battling bosses like older FF, Higher HP, MP, and Ect, for a better experience and ect.
