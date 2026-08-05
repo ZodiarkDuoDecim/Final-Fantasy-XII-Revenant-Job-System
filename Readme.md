@@ -1,4 +1,4 @@
-<h1 align="center"> Final Fantasy XII: Revenant Job System (PS2) </h1>
+<h1 align="center"> Final Fantasy XII: Revenant Job System v3.5 (PS2 Version) </h1>
 
 <p align="center">
   <img src="images/final-logo.png" alt="Logo" width="600">
