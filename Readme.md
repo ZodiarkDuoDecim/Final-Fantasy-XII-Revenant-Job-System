@@ -79,6 +79,84 @@ New spell tiers, restored elements, redesigned progression, and entirely new abi
 
 From Water, Aero and Earth magic to powerful Technicks like **All-Out**, combat now offers significantly more tactical depth.
 
+## Vital Stealing
+
+<p align="center">
+  <img src="images/Vayne%20Banner%20Vital%20Stealing.png" width="100%">
+</p>
+
+Stealing has become an essential gameplay mechanic. Many high-tier weapons, crafting materials, and exclusive rewards can only be obtained from special enemies and bosses, making every successful steal a meaningful part of your progression.
+
+---
+
+## New Exclusive Skills & Spells
+
+<p align="center">
+  <img src="images/Reks%20Banner%20Exclusive%20Skills.png" width="100%">
+</p>
+
+Each playable character now begins the game with unique Innate Skills independent of their selected Job, giving every party member a stronger identity and new strategic possibilities throughout the adventure.
+
+---
+
+## The 12 Job Classes Renewed
+
+<p align="center">
+  <img src="images/Balthier%20The%2012%20Jobs.png" width="100%">
+</p>
+
+The License Board has been carefully redesigned to provide greater freedom without sacrificing each Job's individuality. Espers can now be assigned more flexibly while preserving exclusive advantages unique to every class.
+
+---
+
+## Colored Elementals
+
+<p align="center">
+  <img src="images/Penelo%20Banner%20Colored%20Element.png" width="100%">
+</p>
+
+Elemental weapons, Magicks, ammunition, and related equipment have been color-coded, making elemental affinities immediately recognizable during exploration and combat.
+
+---
+
+## New Bazaar Items
+
+<p align="center">
+  <img src="images/Vossler%20Banner%20Baazar.png" width="100%">
+</p>
+
+The Bazaar has been significantly expanded with brand-new recipes, conversions, and exclusive rewards. Discover powerful equipment by combining rare loot and making full use of the new crafting possibilities.
+
+---
+
+## Accessories Overhaul
+
+<p align="center">
+  <img src="images/Reddas%20Banner%20Accessories.png" width="100%">
+</p>
+
+Every accessory in the game has been completely reworked with new attributes and unique effects, transforming them into meaningful equipment choices capable of defining entire character builds.
+
+---
+
+## New Balanced Shops
+
+<p align="center">
+  <img src="images/Larsa%20Banner%20Balanced%20Shops.png" width="100%">
+</p>
+
+Every shop has been rebuilt specifically for Revenant Job System, providing a smoother progression curve and ensuring that equipment availability matches the redesigned gameplay experience.
+
+---
+
+## Overhauled Ammunition!
+
+<p align="center">
+  <img src="images/Fran%20Banner%20Ammunition.png" width="100%">
+</p>
+
+Archery, firearms, and bombs have received entirely new ammunition types and effects, including Holy Arrows, Holy Shot, DARK Chaos Bombs, and many other additions that greatly expand ranged combat.
+
 ---
 
 # Installation
