@@ -21,6 +21,7 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 - **All Enemies Overhaul** All single enemy was buffed 1,5x for being harder like Older FF, and some having their steal modified for new Bazaar Items!
 - **New Baazar Items** Check-out the Baazar Items and Conversions in theh Downloadable TXT - Convert, Create, Obtain new Equipments or other things from Bazaar, making more useful and unique!
 - **Vital Stealing:** Robbing special enemies and bosses is now super important for high-tier equipment!
+- **Colored Elementals** Each Elemental Weapon, Magick or Hosowever has been Colored for Help your Eyes!
 - **New Balanced Shops:** Customized shops built specifically for the mod! With great power comes great responsibility!
 
 ## Installation
