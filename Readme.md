@@ -10,18 +10,18 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 
 ### Features
 
-- **Complete Overhauled** Equipments for Wield legendary relics and restored beta content like the classic Knife, Zantetsuken, Brotherhood Fratani, Revolver Gunblade and Hero's Blade!
-- **Overhauled Ammunition!** Prepare youself with the new effects from the ammunations, archery and bombs from the game, such as Holy Arrows, Holy Shot or DARK ~ Chaos Bombs for your Piercing and Unique Hand-Bomb Blassty Weapon!
-- **Ninja Swords** are now One-Handed Weapons!
+- **Completely Overhauled Equipment:** Wield legendary relics and restored beta content like the classic Knife, Zantetsuken, Brotherhood Fratani, Revolver Gunblade, and Hero's Blade!
+- **Overhauled Ammunition!** Prepare yourself for new effects from ammunition, archery, and bombs in the game, such as Holy Arrows, Holy Shot, or DARK ~ Chaos Bombs for your Piercing and Unique Hand-Bomb Blassty Weapon!
+- **Ninja Swords** are now one-handed weapons!
 - **Accessories Overhaul!** Every single accessory in the game has been altered with different stats, making each one a unique and strategic choice for your builds!
-- **The 12 Job Classes Renewed**, possible now use all Espers on any job without losing anything, or have exclusivity like Bless Knight being possible use Hero's Blade or Flick Sniper possible using Seiten-Taisei!
+- **The 12 Job Classes Renewed:** It is now possible to use all Espers on any job without losing anything, or enjoy exclusive perks, such as the Bless Knight being able to use the Hero's Blade, or the Flick Sniper using the Seiten-Taisei!
 - **New Exclusive Skills & Spells:** Characters now possess unique Innate Skills right from the start, independent of their chosen Job.
-- **Magicks & Technickes Overhaul:** The Entire set of Magicks, Technickes has been Overhauled and Remade, with 3/4 Levels of Each Elemental Magick (Earth has 3), like Ice Break, Quake, Pyromance, or Deluge (enemies that possued that magicks lose for the good of progress), you can even Play using, Water, Watera, Waterga, Aero, Aerora, Aeoroga (4 - Deluge - Tempest), You can even use Technickes like All-Out - a Powerfull Powerhouse Attack with Piercing Effect of % that ignores Enemie Defense, Evasion and Ect.
-- **Harder Bosses:** Get ready for a Elegant way of Battling bosses like older FF, Higher HP, MP, and Ect, for a better experience and ect.
-- **All Enemies Overhaul** All single enemy was buffed 1,5x for being harder like Older FF, and some having their steal modified for new Bazaar Items!
-- **New Baazar Items** Check-out the Baazar Items and Conversions in theh Downloadable TXT - Convert, Create, Obtain new Equipments or other things from Bazaar, making more useful and unique!
+- **Magicks & Technicks Overhaul:** The entire set of Magicks and Technicks has been overhauled and remade, featuring 3 to 4 levels for each elemental Magick (Earth has 3), such as Ice Break, Quake, Pyromance, or Deluge (enemies that possessed these magicks have lost them for the sake of progression). You can now play using Water, Watera, Waterga, Aero, Aerora, Aeroga (up to tier 4 - Deluge/Tempest). You can even use Technicks like All-Out—a powerful attack with a piercing effect that ignores enemy defense, evasion, etc.
+- **Harder Bosses:** Get ready for a more elegant way of battling bosses, similar to older FF titles, featuring higher HP, MP, etc., for a better overall experience.
+- **Enemy Overhaul:** Every single enemy was buffed by 1.5x to increase the difficulty, reminiscent of older FF games, and some have had their steal tables modified for new Bazaar items!
+- **New Bazaar Items:** Check out the Bazaar items and conversions in the downloadable TXT file. Convert, create, and obtain new equipment or other items from the Bazaar, making it more useful and unique!
 - **Vital Stealing:** Robbing special enemies and bosses is now super important for high-tier equipment!
-- **Colored Elementals** Each Elemental Weapon, Magick or Hosowever has been Colored for Help your Eyes!
+- **Colored Elementals:** Each elemental weapon, Magick, or related item has been color-coded to help you visually!
 - **New Balanced Shops:** Customized shops built specifically for the mod! With great power comes great responsibility!
 
 ## Installation
@@ -33,25 +33,24 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 5. Rename the ISO file to `ff12zj.iso`.
 6. Run `patch.exe` to inject the mod files from `bin_izjs` into `ff12zj.iso`.
 
-After the process is complete, open the modified ISO with an emulator or play with OPL as your option. If the installation was successful, after all you will see the new title screen with "REVENANT JOB SYSTEM".
+After the process is complete, open the modified ISO with an emulator or play it using OPL. If the installation was successful, you will see the new title screen with "REVENANT JOB SYSTEM".
 
-# Coming Soon.....
+# Coming Soon...
 
 ## Ownership & Permissions
 
 This mod was developed from the ground up without using files or assets from other mods.
 
-**All content was created manually and thoroughly tested by myself, Akita, MidnightZR and KellueHaze!**
-
+**All content was created manually and thoroughly tested by myself, Akita, MidnightZR, and KellueHaze!**
 
 ## Credits
 
 - [Sky Pirate's Den](https://discord.gg/UBrP6ME) – for support and valuable feedback.
 - [ffgriever](https://www.nexusmods.com/profile/ffgriever) – for creating the ISO patcher used to inject files into the game ISO.
-- [Xeavin](https://www.nexusmods.com/profile/Xeavin) – for creating the patch that allows to use the 7 reserve licenses nodes, modding support, tools, and ideas.
+- [Xeavin](https://www.nexusmods.com/profile/Xeavin) – for creating the patch that allows the use of the 7 reserve license nodes, modding support, tools, and ideas.
 - [Aquarius Camus](https://www.nexusmods.com/profile/AquariusCamus34) – for guidance on modifying game files and providing tools.
 - [Akita](https://www.nexusmods.com/profile/Akita1957) & [Shrimpman](https://www.nexusmods.com/profile/SShrimpman) – for beta testing.
 - [FehDead](https://www.nexusmods.com/profile/fehdead) – for support and ideas.
 - Paulo Ítalo & João – for ideas such as restoring classic weapons like the Holy Katana and Mutsunokami.
-- MidnightZR & Kelluehaze - for being the special testers members and supply of all long of the project.
+- MidnightZR & Kelluehaze – for being special tester members and providing support throughout the entire project.
 - Mikachuuu – for assistance with Gemini Plus and brainstorming.
