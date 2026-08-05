@@ -12,7 +12,6 @@ A comprehensive overhaul mod inspired by classic Final Fantasy titles, designed 
 
 - **Completely Overhauled Equipment:** Wield legendary relics and restored beta content like the classic Knife, Zantetsuken, Brotherhood Fratani, Revolver Gunblade, and Hero's Blade!
 - **Overhauled Ammunition!** Prepare yourself for new effects from ammunition, archery, and bombs in the game, such as Holy Arrows, Holy Shot, or DARK ~ Chaos Bombs for your Piercing and Unique Hand-Bomb Blassty Weapon!
-- **Ninja Swords** are now one-handed weapons!
 - **Accessories Overhaul!** Every single accessory in the game has been altered with different stats, making each one a unique and strategic choice for your builds!
 - **The 12 Job Classes Renewed:** It is now possible to use all Espers on any job without losing anything, or enjoy exclusive perks, such as the Bless Knight being able to use the Hero's Blade, or the Flick Sniper using the Seiten-Taisei!
 - **New Exclusive Skills & Spells:** Characters now possess unique Innate Skills right from the start, independent of their chosen Job.
