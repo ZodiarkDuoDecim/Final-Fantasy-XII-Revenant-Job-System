@@ -1,3 +1,5 @@
+# Chances from Get Status Effects from elemental Magicks (enemy dont count)
+( from 1 category to 4th based on Ranking of Elemental Magick)
 Fire → Berserk 5 to 8 to 12 to 15
 
 Ice → Immobilize 6 to 9 to 14 to 20
