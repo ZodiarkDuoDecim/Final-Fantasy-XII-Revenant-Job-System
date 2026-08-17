@@ -1,4 +1,4 @@
-# Chances from Get Status Effects from elemental Magicks (enemy dont count)
+# Chances from Get Status Effects from elemental Magicks (enemy Magicks does not account)
 ( from 1 category to 4th based on Ranking of Elemental Magick)
 Fire → Berserk 5 to 8 to 12 to 15
 
