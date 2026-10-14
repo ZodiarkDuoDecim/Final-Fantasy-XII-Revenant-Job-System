@@ -32,26 +32,36 @@ Every feature has been handcrafted, tested, balanced, and refined to deliver wha
 
 > ## DO NOT DOWNLOAD THE MOD PACKAGE MANUALLY FROM THE GITHUB RELEASES PAGE
 >
-> **Revenant Job System is designed to be downloaded and managed through `RJS Installer.exe`.**
+> **The only file you should download manually is `Installer.7z` from the main repository page.**
 >
-> The GitHub Releases page is used as the update source for the Installer.  
-> **Do not manually download, extract, replace, or install the mod package from Releases.**
+> After downloading it, **extract the entire archive** and keep its contents together.
 >
-> ### The official installation method is:
+> The Installer package contains:
 >
-> **1. Download `RJS Installer.exe`.**  
-> **2. Open the Installer.**  
-> **3. Click `Check Updates`.**  
-> **4. Allow the Installer to download the latest available Revenant Job System package automatically.**  
-> **5. Select your original Final Fantasy XII International Zodiac Job System ISO.**  
-> **6. Choose the output folder.**  
-> **7. Click `Install`.**
+> - `RJS Installer.exe`
+> - `README - ffgriever.txt`
+> - `LICENSE - ffgriever`
 >
-> The Installer will always use the **latest valid mod package currently available from the official GitHub Releases page**.
+> **Do not separate or redistribute `RJS Installer.exe` without the ffgriever credit and license files included with it.**
 >
-> If a newer test Release is removed, replaced, or rolled back, **`Check Updates` will synchronize the local package with the latest package that is actually available on GitHub**.
+> Revenant Job System uses **ffgriever's FF12 PS2 ISO Dumper/Repacker v2.0** as part of the ISO patching/repacking process, with permission to include it in this project. The corresponding credit and license files are included in the Installer package.
 >
-> **Always use `Check Updates` before installing the mod to an ISO.**
+> ### Official installation flow
+>
+> **1. Download `Installer.7z` from the main repository page.**  
+> **2. Extract the entire `Installer.7z` archive.**  
+> **3. Open `RJS Installer.exe` from the extracted folder.**  
+> **4. Click `Check Updates`.**  
+> **5. Allow the Installer to download the latest available Revenant Job System package automatically from GitHub Releases.**  
+> **6. Select your original Final Fantasy XII International Zodiac Job System ISO.**  
+> **7. Choose the output folder.**  
+> **8. Click `Install`.**
+>
+> The **GitHub Releases page is used by the Installer as the official mod-package update source**.
+>
+> **Do not manually download or extract the Revenant Job System package from Releases.**
+>
+> Always use **`Check Updates`** before installing the mod to an ISO.
 
 ---
 
@@ -61,29 +71,41 @@ Every feature has been handcrafted, tested, balanced, and refined to deliver wha
 ## Requirements
 
 - An original **Final Fantasy XII International Zodiac Job System (IZJS)** ISO dumped from your own disc or personal backup.
-- `RJS Installer.exe`.
+- The complete extracted contents of `Installer.7z`.
 - An internet connection when using **Check Updates**.
-- Enough free storage space for the new modified ISO.
+- Enough free storage space for the newly generated ISO.
+
+## Downloading the Installer
+
+1. On the main repository page, download **`Installer.7z`**.
+2. Extract the archive to a folder of your choice.
+3. Keep these files together:
+   - `RJS Installer.exe`
+   - `README - ffgriever.txt`
+   - `LICENSE - ffgriever`
+4. Open `RJS Installer.exe`.
+
+> **Do not download the Revenant Job System mod package manually from GitHub Releases.**  
+> The Installer handles that automatically through **Check Updates**.
 
 ## Official Installation Procedure
 
-1. Download and extract the **RJS Installer** package.
-2. Open `RJS Installer.exe`.
-3. Click **Check Updates**.
-4. Wait while the Installer checks the official Revenant Job System GitHub Releases.
-5. If a package is available, allow the Installer to download and prepare the latest version automatically.
-6. Confirm that the Installer displays the downloaded Revenant Job System version.
-7. Click **Select...** and choose your original IZJS ISO.
-8. Click **Output folder...** and select where the modified ISO should be created.
-9. Click **Install**.
-10. Wait until the installation process finishes. Keep an eye on the installer log for errors.
-11. When completed, launch `Final Fantasy XII Revenant Job System.iso` on your modified PlayStation 2 or with PCSX2.
+1. Open `RJS Installer.exe` from the extracted Installer folder.
+2. Click **Check Updates**.
+3. Wait while the Installer checks the official Revenant Job System GitHub Releases.
+4. Allow it to download and prepare the latest valid mod package automatically.
+5. Confirm that the Installer displays the downloaded Revenant Job System version.
+6. Click **Select...** and choose your original IZJS ISO.
+7. Click **Output folder...** and select where the modified ISO should be created.
+8. Click **Install**.
+9. Wait until the installation finishes and monitor the log for any reported errors.
+10. When completed, launch `Final Fantasy XII Revenant Job System.iso` on your modified PlayStation 2 or with PCSX2.
 
 ## Updating Revenant Job System
 
 Whenever a new version is released:
 
-1. Open `RJS Installer.exe`.
+1. Open your existing `RJS Installer.exe`.
 2. Click **Check Updates**.
 3. Let the Installer compare your local package with the latest valid package currently available on GitHub.
 4. Accept the update when prompted.
