@@ -160,16 +160,23 @@ Archery, firearms, and bombs have received entirely new ammunition types and eff
 ---
 
 # Installation
-- Own a Original IZJS ISO from your Backups, DVD or Whatever
-- Rename your FFXII IZJS English ISO to FFXII.ISO
-- click on Install.bat
-- Wait, do not Panick
-- Done, play and done
+
+- Own an original Final Fantasy XII International Zodiac Job System (IZJS) ISO dumped from your own disc or personal backup.
+- Download the latest `Installer.7z` from the Releases page.
+- Extract the package.
+- Open `RJS Installer.exe`.
+- Use **Check Updates** to make sure you have the latest Revenant Job System package.
+- Select your original IZJS ISO.
+- Select the output folder for the modified ISO.
+- Click **Install**.
+- Wait for the installation to finish and keep an eye on the console log for any errors.
+- Once completed, launch `Final Fantasy XII Revenant Job System.iso` on your modified PS2 or with PCSX2.
 
 ---
 
-- Soon after instalation open your Modified PS2 or PCSX2 with FFXIIRJS.ISO
-- You will notice the Silenced Music from Menu and the New Logo
+# You Are Ready to Play Final Fantasy XII Revenant Job System
+
+Enjoy!
 
 ---
 
