@@ -25,6 +25,31 @@ Every feature has been handcrafted, tested, balanced, and refined to deliver wha
 
 ---
 
+---
+
+# Installation
+
+- Own an original Final Fantasy XII International Zodiac Job System (IZJS) ISO dumped from your own disc or personal backup.
+- Download the latest `Installer.7z` from the Releases page.
+- Extract the package.
+- Open `RJS Installer.exe`.
+- Use **Check Updates** to make sure you have the latest Revenant Job System package.
+- Select your original IZJS ISO.
+- Select the output folder for the modified ISO.
+- Click **Install**.
+- Wait for the installation to finish and keep an eye on the console log for any errors.
+- Once completed, launch `Final Fantasy XII Revenant Job System.iso` on your modified PS2 or with PCSX2.
+
+---
+
+# You Are Ready to Play Final Fantasy XII Revenant Job System
+
+Enjoy!
+
+---
+
+---
+
 # Main Features
 
 ## Completely Overhauled Equipment
@@ -158,25 +183,6 @@ Every shop has been rebuilt specifically for Revenant Job System, providing a sm
 Archery, firearms, and bombs have received entirely new ammunition types and effects, including Holy Arrows, Holy Shot, DARK Chaos Bombs, and many other additions that greatly expand ranged combat.
 
 ---
-
-# Installation
-
-- Own an original Final Fantasy XII International Zodiac Job System (IZJS) ISO dumped from your own disc or personal backup.
-- Download the latest `Installer.7z` from the Releases page.
-- Extract the package.
-- Open `RJS Installer.exe`.
-- Use **Check Updates** to make sure you have the latest Revenant Job System package.
-- Select your original IZJS ISO.
-- Select the output folder for the modified ISO.
-- Click **Install**.
-- Wait for the installation to finish and keep an eye on the console log for any errors.
-- Once completed, launch `Final Fantasy XII Revenant Job System.iso` on your modified PS2 or with PCSX2.
-
----
-
-# You Are Ready to Play Final Fantasy XII Revenant Job System
-
-Enjoy!
 
 ---
 
