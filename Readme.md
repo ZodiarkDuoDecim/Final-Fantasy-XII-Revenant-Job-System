@@ -135,7 +135,7 @@ For normal installation, **you only need `Installer.7z`**.
 - `images/` — Artwork and README feature banners.
 - `src/` — Development/source payload snapshots and project archives. **Normal users do not need these files to install the mod.**
 - `Baazar List.txt` — Bazaar reference/documentation.
-- `Magics Property.txt` — Magicks property reference/documentation.
+- [`Magics Property.md`](Magics%20Property.md) — Elemental Magicks status-effect chance chart.
 
 The contents of `src/` are provided for project development/reference and should not be confused with the official Installer workflow.
 
