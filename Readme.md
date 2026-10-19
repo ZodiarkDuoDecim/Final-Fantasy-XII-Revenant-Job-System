@@ -29,125 +29,71 @@ The result is **Revenant Job System** — a complete gameplay overhaul that rede
 Every major system has been handcrafted, extensively tested, and continuously refined to create a new and ambitious way to experience **Final Fantasy XII International Zodiac Job System**.
 
 ---
+>
+<h1><span style="color:red">Installation Guide</span></h1>
 
-# ⚠️ IMPORTANT — READ BEFORE INSTALLING
+# 1. Download
 
-> ## DOWNLOAD ONLY `Installer.7z` FROM THE MAIN REPOSITORY PAGE
->
-> **Do not manually download the Revenant Job System mod package from GitHub Releases.**
->
-> The official installation flow is:
->
-> **1. Download `Installer.7z`.**  
-> **2. Extract the entire archive and keep its contents together.**  
-> **3. Run `RJS Installer.exe`.**  
-> **4. Click `Check Updates`.**  
-> **5. Let the Installer download the latest valid Revenant Job System package automatically from GitHub Releases.**  
-> **6. Select a clean/original Final Fantasy XII International Zodiac Job System ISO.**  
-> **7. Choose the output folder and click `Install`.**
->
-> GitHub Releases is the official package source used by the Installer. It is **not** the normal manual installation method.
->
-> Always use **`Check Updates`** before installing.
+Download the latest release from the Releases section on the right side of the repository's main page.
 
+# 2. Extract the Files
+
+Extract the downloaded archive containing the RJS installation files.
+
+# 3. Prepare Your ISO
+
+Place your legally obtained **FFXII IZJS ISO** in the same folder as **Install.bat** and **ff12-iso-dumper.exe**.
+
+Do not remove or modify any of the other files included with the installer.
+- (or things may not happen as expected)
+
+# 4. Rename Your ISO
+
+Rename your original ISO to: **FFXII.iso** - Since **ff12-iso-dumper.exe** need to recognize and apply the Mod into ISO.
+
+# 5. Run the Installer
+
+Execute Install.bat and wait for the process to finish. Once the terminal window closes, the patched ISO should be generated in the same folder as:
+
+- **FFXIIRJS.iso** - The Generated Modded ISO from IZJS in this case.
+
+# 6. Play the Game
+
+Load **FFXIIRJS.iso** using your preferred setup:
+
+**PS2 Emulator**: Compatible PlayStation 2 emulators.
+
+**PS2 Console**: OPL is recommended; an exFAT storage setup is recommended where supported by your configuration.
+
+**PS3 Console**: Use a compatible PS2 game-loading method.
+
+Or **Any other Emulator** using PCSX2's Code.
+
+- **Compatibility may vary depending on your emulator, console configuration, and storage setup.**
+
+# 7. Report Bugs
+
+Found a bug or encountered an unexpected issue? Please report it through the Issues tab on the main RJS GitHub repository page.
+
+When reporting a bug, include as much relevant information as possible, such as the affected area, the steps to reproduce the issue, and your setup.
+
+Final Notes & Personal Comments
+
+I decided to remove the previous installer after it triggered two antivirus warnings on VirusTotal. Xeavin brought these warnings to my attention, and I wanted to take them seriously rather than overlook them.
+
+I also wanted to rebuild this section of the project and reconsider the installation process. The previous toolset included FFgriever's ISO Dumper 2.0 for FFXII IZJS, which had already been extensively tested. However, I decided that I did not want to keep that prebuilt executable as part of the project distribution.
+
+For now, this installer provides an alternative while keeping the process as straightforward as possible: place your ISO alongside the required files, run the batch script, and let it generate the patched image.
+
+If you have any feedback about the installer, the installation process, or potential improvements, feel free to share your thoughts with me or Xeavin over at Sky Pirate's Den.
+
+Thank you for reading, and thank you for supporting Final Fantasy XII: Revenant Job System!
 ---
-
-# Installation
-
-## Supported Game
-
-- **Final Fantasy XII International Zodiac Job System** — PlayStation 2
-- Game ID: **SLPM-66750**
-- Use a **clean/original IZJS ISO** dumped from your own disc or personal backup.
-- Do **not** install RJS over an ISO that already contains an older RJS version or unrelated modifications unless a future release explicitly says otherwise.
-
-## Requirements
-
-- A Windows PC capable of running `RJS Installer.exe`.
-- A clean/original **Final Fantasy XII International Zodiac Job System (IZJS)** ISO.
-- The complete extracted contents of `Installer.7z`.
-- An internet connection when using **Check Updates**.
-- Enough free storage space for the newly generated ISO.
-
-## Installer Package
-
-Download **`Installer.7z`** from the main repository page and extract the entire archive.
-
-Keep these files together:
-
-- `RJS Installer.exe`
-- `README - ffgriever.txt`
-- `LICENSE - ffgriever`
-
-Revenant Job System uses **ffgriever's FF12 PS2 ISO Dumper/Repacker v2.0** as part of the ISO patching/repacking process, with permission to include it in this project. The corresponding credit and license files are included with the Installer and must remain distributed with it.
-
-> **Do not manually download or extract the RJS package from GitHub Releases.**  
-> The Installer handles the package automatically through **Check Updates**.
-
-## Official Installation Procedure
-
-1. Extract `Installer.7z` to a folder of your choice.
-2. Open `RJS Installer.exe` from the extracted folder.
-3. Click **Check Updates**.
-4. Let the Installer check the official Revenant Job System GitHub Releases.
-5. Allow it to download and prepare the latest valid mod package automatically.
-6. Confirm that the Installer displays the downloaded Revenant Job System version.
-7. Click **Select...** and choose your clean/original IZJS ISO.
-8. Click **Output folder...** and select where the modified ISO should be created.
-9. Click **Install**.
-10. Monitor the Installer log and make sure the process completes without errors.
-11. Launch `Final Fantasy XII Revenant Job System.iso` on your PlayStation 2 setup or with PCSX2.
-
-Keep your original ISO as a backup.
-
-## Updating Revenant Job System
-
-Whenever a new version is released:
-
-1. Open your existing `RJS Installer.exe`.
-2. Click **Check Updates**.
-3. Let the Installer compare your local package with the latest valid package on GitHub Releases.
-4. Accept the update when prompted.
-5. Install the new version to a **clean/original IZJS ISO**.
-
-**Do not patch a previously generated RJS ISO to update the mod.** Start from a clean/original IZJS ISO unless the release notes explicitly state otherwise.
-
----
-
-# Compatibility
-
-Revenant Job System is built for the **PlayStation 2 version** of Final Fantasy XII International Zodiac Job System.
-
-The generated ISO is intended for use with:
-
-- **PlayStation 2 hardware** using a compatible homebrew/modded setup.
-- **PCSX2**.
-
-Because RJS modifies many internal game systems, combining it with unrelated gameplay patches or other large-scale mods may cause conflicts.
-
----
-
-# Repository Structure
-
-For normal installation, **you only need `Installer.7z`**.
-
-- `Installer.7z` — Official RJS Installer package.
-- `images/` — Artwork and README feature banners.
-- `src/` — Development/source payload snapshots and project archives. **Normal users do not need these files to install the mod.**
-- [`Bazaar List.md`](Bazaar%20List.md) — Bazaar Trade and Conversion chart.
-- [`Magics Property.md`](Magics%20Property.md) — Elemental Magicks status-effect chance chart.
-
-The contents of `src/` are provided for project development/reference and should not be confused with the official Installer workflow.
-
----
-
-# You Are Ready to Play Final Fantasy XII Revenant Job System
 
 Enjoy!
 
 ---
 
-# Main Features
 
 ## Completely Overhauled Equipment
 
@@ -313,8 +259,6 @@ This repository does **not** distribute a Final Fantasy XII game ISO. You must p
 - **FehDead** — Ideas and project support.
 - **Paulo Ítalo** & **João** — Weapon restoration ideas.
 - **MidnightZR** & **KellueHaze** — Extensive testing and project support.
-- **Mikachuuu** — Gemini Plus assistance and brainstorming.
-- **Leandro Kuogetsu** — ChatGPT Plus support and general assistance.
 - **Yao** — Hands-on assistance and support while learning graphics creation.
 
 ---

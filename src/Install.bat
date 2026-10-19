@@ -1,0 +1,1 @@
+ff12-iso-dumper -p FFXIIRJS.iso FFXII.iso RJS_Files -m=map.txt
