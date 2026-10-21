@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <b>Latest public release: v3.4.3</b><br>
+  <b>Latest public release: v3.4.4</b><br>
   Designed for the original PlayStation 2 version and PCSX2.
 </p>
 
