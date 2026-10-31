@@ -4,16 +4,11 @@ on:
   release:
     types: [published]
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/main.yml"
 
 permissions: {}
 
 jobs:
   announce:
-    if: ${{ github.event_name != 'push' || github.event.head_commit.message == 'Announce RJS v3.4.4 on Discord' }}
     runs-on: ubuntu-latest
     steps:
       - name: Announce RJS release on Discord
