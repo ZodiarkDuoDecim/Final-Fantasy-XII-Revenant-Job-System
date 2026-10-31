@@ -1,40 +1,52 @@
-
 name: Discord Release Announcement
 
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions: {}
 
 jobs:
   announce:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Announce release on Discord
+      - name: Announce release or test on Discord
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          EVENT_NAME: ${{ github.event_name }}
           TAG_NAME: ${{ github.event.release.tag_name }}
           RELEASE_URL: ${{ github.event.release.html_url }}
           RELEASE_BODY: ${{ github.event.release.body }}
-
         run: |
           if [ -z "$DISCORD_WEBHOOK_URL" ]; then
             echo "Discord webhook secret is missing."
             exit 1
           fi
 
+          if [ "$EVENT_NAME" = "release" ]; then
+            CONTENT="@everyone 🚀 New RJS Release Available!"
+            TITLE="Revenant Job System ${TAG_NAME}"
+            URL="$RELEASE_URL"
+            DESCRIPTION="$RELEASE_BODY"
+            ALLOWED_MENTIONS='{"parse":["everyone"]}'
+          else
+            CONTENT="Travesti do Mal Update"
+            TITLE="Discord webhook test"
+            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System"
+            DESCRIPTION="Manual test from GitHub Actions."
+            ALLOWED_MENTIONS='{"parse":[]}'
+          fi
+
           PAYLOAD=$(jq -n \
-            --arg content "@everyone 🚀 New RJS Release Available!" \
-            --arg title "Revenant Job System ${TAG_NAME}" \
-            --arg url "$RELEASE_URL" \
-            --arg description "$RELEASE_BODY" \
+            --arg content "$CONTENT" \
+            --arg title "$TITLE" \
+            --arg url "$URL" \
+            --arg description "$DESCRIPTION" \
+            --argjson allowed_mentions "$ALLOWED_MENTIONS" \
             '{
               content: $content,
-              allowed_mentions: {
-                parse: ["everyone"]
-              },
+              allowed_mentions: $allowed_mentions,
               embeds: [{
                 title: $title,
                 url: $url,
