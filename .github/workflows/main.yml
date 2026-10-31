@@ -4,11 +4,16 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/main.yml"
 
 permissions: {}
 
 jobs:
   announce:
+    if: ${{ github.event_name != 'push' || github.event.head_commit.message == 'Run Discord delivery test' }}
     runs-on: ubuntu-latest
     steps:
       - name: Announce RJS release on Discord
@@ -29,11 +34,16 @@ jobs:
             TITLE="Revenant Job System ${TAG_NAME}"
             URL="$RELEASE_URL"
             DESCRIPTION="$RELEASE_BODY"
+          elif [ "$EVENT_NAME" = "push" ]; then
+            CONTENT="🧪 RJS Discord integration test — no action needed."
+            TITLE="Discord webhook test successful"
+            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
+            DESCRIPTION="This is an automated delivery test from GitHub Actions. The webhook connection and message formatting are being verified. No release announcement is being made."
           else
-            CONTENT="@everyone 🚀 The latest Revenant Job System release is here!"
-            TITLE="Revenant Job System v3.4.4"
-            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
-            DESCRIPTION="**Latest public release: v3.4.4**
+            CONTENT="🧪 RJS Discord integration test — no action needed."
+            TITLE="Discord webhook test successful"
+            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
+            DESCRIPTION="Manual test from GitHub Actions. No release announcement is being made."
 
               - Fixed a loading issue at certain passages in Rabanastre.
               - Reworked Claws into Styles, with unique elemental properties and updated icons, including a unique Time Style.
@@ -52,7 +62,7 @@ jobs:
             --arg description "$DESCRIPTION" \
             '{
               content: $content,
-              allowed_mentions: {parse: ["everyone"]},
+              allowed_mentions: {parse: ($content | contains("@everyone")) as $ping | (if $ping then ["everyone"] else [] end)},
               embeds: [{
                 title: $title,
                 url: $url,
