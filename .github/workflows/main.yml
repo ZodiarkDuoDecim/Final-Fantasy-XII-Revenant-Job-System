@@ -4,14 +4,19 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/main.yml"
 
 permissions: {}
 
 jobs:
   announce:
+    if: github.event_name != 'push' || github.event.head_commit.message == 'Announce RJS v3.4.4 on Discord'
     runs-on: ubuntu-latest
     steps:
-      - name: Announce release or test on Discord
+      - name: Announce RJS release on Discord
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
@@ -29,13 +34,23 @@ jobs:
             TITLE="Revenant Job System ${TAG_NAME}"
             URL="$RELEASE_URL"
             DESCRIPTION="$RELEASE_BODY"
-            ALLOWED_MENTIONS='{"parse":["everyone"]}'
           else
-            CONTENT="Travesti do Mal Update"
-            TITLE="Discord webhook test"
-            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System"
-            DESCRIPTION="Manual test from GitHub Actions."
-            ALLOWED_MENTIONS='{"parse":[]}'
+            CONTENT="@everyone 🚀 The latest Revenant Job System release is here!"
+            TITLE="Revenant Job System v3.4.4"
+            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
+            DESCRIPTION=$(cat <<'EOF'
+**Latest public release: v3.4.4**
+
+- Fixed a loading issue at certain passages in Rabanastre.
+- Reworked Claws into Styles, with unique elemental properties and updated icons, including a unique Time Style.
+- Remade the loading screen with the Golden Forged Lion.
+- Updated the Clan Menu screen with a beta image.
+- Corrected the displayed names for Arrows, Bombs, and Shots.
+- Fixed the underlying map-file issue caused by leftover data from discarded development.
+
+[Download Revenant Job System v3.4.4](https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/download/v3.4.4/Revenant.Job.System.3.4.4.7z)
+EOF
+)
           fi
 
           PAYLOAD=$(jq -n \
@@ -43,10 +58,9 @@ jobs:
             --arg title "$TITLE" \
             --arg url "$URL" \
             --arg description "$DESCRIPTION" \
-            --argjson allowed_mentions "$ALLOWED_MENTIONS" \
             '{
               content: $content,
-              allowed_mentions: $allowed_mentions,
+              allowed_mentions: {parse: ["everyone"]},
               embeds: [{
                 title: $title,
                 url: $url,
