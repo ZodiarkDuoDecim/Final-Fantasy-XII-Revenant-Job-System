@@ -16,7 +16,7 @@ jobs:
     if: ${{ github.event_name != 'push' || github.event.head_commit.message == 'Run Discord delivery test' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Announce RJS release on Discord
+      - name: Announce RJS release or test Discord delivery
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
@@ -34,25 +34,11 @@ jobs:
             TITLE="Revenant Job System ${TAG_NAME}"
             URL="$RELEASE_URL"
             DESCRIPTION="$RELEASE_BODY"
-          elif [ "$EVENT_NAME" = "push" ]; then
-            CONTENT="🧪 RJS Discord integration test — no action needed."
-            TITLE="Discord webhook test successful"
-            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
-            DESCRIPTION="This is an automated delivery test from GitHub Actions. The webhook connection and message formatting are being verified. No release announcement is being made."
           else
             CONTENT="🧪 RJS Discord integration test — no action needed."
             TITLE="Discord webhook test successful"
             URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
-            DESCRIPTION="Manual test from GitHub Actions. No release announcement is being made."
-
-              - Fixed a loading issue at certain passages in Rabanastre.
-              - Reworked Claws into Styles, with unique elemental properties and updated icons, including a unique Time Style.
-              - Remade the loading screen with the Golden Forged Lion.
-              - Updated the Clan Menu screen with a beta image.
-              - Corrected the displayed names for Arrows, Bombs, and Shots.
-              - Fixed the underlying map-file issue caused by leftover data from discarded development.
-
-              [Download Revenant Job System v3.4.4](https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/download/v3.4.4/Revenant.Job.System.3.4.4.7z)"
+            DESCRIPTION="Automated test from GitHub Actions. This verifies the webhook connection and message formatting. No release announcement is being made."
           fi
 
           PAYLOAD=$(jq -n \
@@ -62,7 +48,9 @@ jobs:
             --arg description "$DESCRIPTION" \
             '{
               content: $content,
-              allowed_mentions: {parse: ($content | contains("@everyone")) as $ping | (if $ping then ["everyone"] else [] end)},
+              allowed_mentions: {
+                parse: (if ($content | contains("@everyone")) then ["everyone"] else [] end)
+              },
               embeds: [{
                 title: $title,
                 url: $url,
