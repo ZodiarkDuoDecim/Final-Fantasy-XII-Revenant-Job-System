@@ -4,15 +4,11 @@ on:
   release:
     types: [published]
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/main.yml
 
 permissions: {}
 
 jobs:
   announce:
-    if: github.event_name != 'push' || github.event.head_commit.message == 'Basch fire test batch [one-time]'
     runs-on: ubuntu-latest
     steps:
       - name: Announce RJS release or run Basch announcement tests
