@@ -4,12 +4,16 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/main.yml
 
 permissions:
   contents: read
 
 jobs:
   announce:
+    if: github.event_name != 'push' || github.event.head_commit.message == 'Basch complete announcement fire test [one-time]'
     runs-on: ubuntu-latest
     steps:
       - name: Load Basch announcement library
