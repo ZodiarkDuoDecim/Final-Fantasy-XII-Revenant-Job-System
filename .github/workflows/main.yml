@@ -150,7 +150,7 @@ jobs:
             title="RJS ${BASE_VERSION} | Basch Update Test ${number}/6"
             description="Simulation based on the current ${BASE_VERSION} baseline. This is an update test only; no new release is being announced."
 
-            send_discord_message "$content" "$title" "$REPOSITORY_URL"
+            send_discord_message "$content" "$title" "$REPOSITORY_URL" "$description" "false"
             echo "Sent update test ${number}/6 (without @everyone)."
             sleep 1
           done
