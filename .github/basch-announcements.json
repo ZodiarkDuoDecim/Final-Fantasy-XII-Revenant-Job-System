@@ -1,0 +1,2063 @@
+{
+  "schema_version": 2,
+  "description": "512 complete Basch-style announcements. Every entry is a standalone two-paragraph message, not a fragment bank. Inspired by the dignified, duty-bound captaincy of Basch fon Ronsenburg and the mission-report atmosphere of Ivalice tactics RPGs. Original prose; no game dialogue copied.",
+  "counts": {
+    "release_announcements": 256,
+    "update_announcements": 256,
+    "total": 512,
+    "unique": 512,
+    "min_paragraphs": 2
+  },
+  "release_announcements": [
+    {
+      "id": "release-001",
+      "body": "I bring a dispatch from the workbench and the field: a new public release of the Revenant Job System is now available.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-002",
+      "body": "The latest report has reached me, and I am pleased to place it before you: a new public release of the Revenant Job System is now available.\n\nYour continued interest gives purpose to the work placed before us. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-003",
+      "body": "Word has arrived from those entrusted with this undertaking: a new public release of the Revenant Job System is now available.\n\nThose who return to our hall after each new undertaking deserve a clear account. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-004",
+      "body": "A captain must see that good work is properly reported. I can now confirm: a new public release of the Revenant Job System is now available.\n\nThe work is now in your hands, and my thanks go with it. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-005",
+      "body": "The watch has brought its findings before the command: a new public release of the Revenant Job System is now available.\n\nLet the record show my respect for everyone who helped bring this work forward. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-006",
+      "body": "Our company has made ready its latest work, and the result is clear: a new public release of the Revenant Job System is now available.\n\nThose who have kept watch over this undertaking have my gratitude. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-007",
+      "body": "Allow me to deliver the news carried back from our latest campaign: a new public release of the Revenant Job System is now available.\n\nThe merit of this progress belongs to all who contributed to it. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-008",
+      "body": "The record of the Revenant Job System receives a new entry: a new public release of the Revenant Job System is now available.\n\nI offer my thanks to those who have stood with this work through each stage. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-009",
+      "body": "I have returned with news for all who have stood beside this project: a new public release of the Revenant Job System is now available.\n\nA good company honours the effort of its members; I do the same here. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-010",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: a new public release of the Revenant Job System is now available.\n\nThe patience of this community has not gone unnoticed. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-011",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: a new public release of the Revenant Job System is now available.\n\nI would have this achievement shared with every companion who helped us reach it. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-012",
+      "body": "The messengers have arrived with a report I am glad to share: a new public release of the Revenant Job System is now available.\n\nI am grateful to all who continue to accompany the Revenant Job System. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-013",
+      "body": "Our efforts have reached a point worthy of announcement: a new public release of the Revenant Job System is now available.\n\nTo all who have followed our progress with patience, accept my sincere thanks. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-014",
+      "body": "I would not keep this news from those who have followed our progress: a new public release of the Revenant Job System is now available.\n\nYour support has been a steady companion on this road. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-015",
+      "body": "The order has been carried out, and I can report its result with confidence: a new public release of the Revenant Job System is now available.\n\nEvery companion who has lent their time has helped bring us here. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-016",
+      "body": "Let the company gather; there is worthy news from the RJS front: a new public release of the Revenant Job System is now available.\n\nI thank those who waited for this report and those who helped make it possible. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-017",
+      "body": "I bring a dispatch from the workbench and the field: the latest version of the Revenant Job System has been published.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-018",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the latest version of the Revenant Job System has been published.\n\nYour continued interest gives purpose to the work placed before us. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-019",
+      "body": "Word has arrived from those entrusted with this undertaking: the latest version of the Revenant Job System has been published.\n\nThose who return to our hall after each new undertaking deserve a clear account. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-020",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the latest version of the Revenant Job System has been published.\n\nThe work is now in your hands, and my thanks go with it. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-021",
+      "body": "The watch has brought its findings before the command: the latest version of the Revenant Job System has been published.\n\nLet the record show my respect for everyone who helped bring this work forward. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-022",
+      "body": "Our company has made ready its latest work, and the result is clear: the latest version of the Revenant Job System has been published.\n\nThose who have kept watch over this undertaking have my gratitude. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-023",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the latest version of the Revenant Job System has been published.\n\nThe merit of this progress belongs to all who contributed to it. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-024",
+      "body": "The record of the Revenant Job System receives a new entry: the latest version of the Revenant Job System has been published.\n\nI offer my thanks to those who have stood with this work through each stage. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-025",
+      "body": "I have returned with news for all who have stood beside this project: the latest version of the Revenant Job System has been published.\n\nA good company honours the effort of its members; I do the same here. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-026",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the latest version of the Revenant Job System has been published.\n\nThe patience of this community has not gone unnoticed. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-027",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the latest version of the Revenant Job System has been published.\n\nI would have this achievement shared with every companion who helped us reach it. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-028",
+      "body": "The messengers have arrived with a report I am glad to share: the latest version of the Revenant Job System has been published.\n\nI am grateful to all who continue to accompany the Revenant Job System. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-029",
+      "body": "Our efforts have reached a point worthy of announcement: the latest version of the Revenant Job System has been published.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-030",
+      "body": "I would not keep this news from those who have followed our progress: the latest version of the Revenant Job System has been published.\n\nYour support has been a steady companion on this road. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-031",
+      "body": "The order has been carried out, and I can report its result with confidence: the latest version of the Revenant Job System has been published.\n\nEvery companion who has lent their time has helped bring us here. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-032",
+      "body": "Let the company gather; there is worthy news from the RJS front: the latest version of the Revenant Job System has been published.\n\nI thank those who waited for this report and those who helped make it possible. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-033",
+      "body": "I bring a dispatch from the workbench and the field: our newest RJS release is ready for the community to examine.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-034",
+      "body": "The latest report has reached me, and I am pleased to place it before you: our newest RJS release is ready for the community to examine.\n\nYour continued interest gives purpose to the work placed before us. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-035",
+      "body": "Word has arrived from those entrusted with this undertaking: our newest RJS release is ready for the community to examine.\n\nThose who return to our hall after each new undertaking deserve a clear account. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-036",
+      "body": "A captain must see that good work is properly reported. I can now confirm: our newest RJS release is ready for the community to examine.\n\nThe work is now in your hands, and my thanks go with it. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-037",
+      "body": "The watch has brought its findings before the command: our newest RJS release is ready for the community to examine.\n\nLet the record show my respect for everyone who helped bring this work forward. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-038",
+      "body": "Our company has made ready its latest work, and the result is clear: our newest RJS release is ready for the community to examine.\n\nThose who have kept watch over this undertaking have my gratitude. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-039",
+      "body": "Allow me to deliver the news carried back from our latest campaign: our newest RJS release is ready for the community to examine.\n\nThe merit of this progress belongs to all who contributed to it. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-040",
+      "body": "The record of the Revenant Job System receives a new entry: our newest RJS release is ready for the community to examine.\n\nI offer my thanks to those who have stood with this work through each stage. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-041",
+      "body": "I have returned with news for all who have stood beside this project: our newest RJS release is ready for the community to examine.\n\nA good company honours the effort of its members; I do the same here. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-042",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: our newest RJS release is ready for the community to examine.\n\nThe patience of this community has not gone unnoticed. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-043",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: our newest RJS release is ready for the community to examine.\n\nI would have this achievement shared with every companion who helped us reach it. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-044",
+      "body": "The messengers have arrived with a report I am glad to share: our newest RJS release is ready for the community to examine.\n\nI am grateful to all who continue to accompany the Revenant Job System. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-045",
+      "body": "Our efforts have reached a point worthy of announcement: our newest RJS release is ready for the community to examine.\n\nTo all who have followed our progress with patience, accept my sincere thanks. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-046",
+      "body": "I would not keep this news from those who have followed our progress: our newest RJS release is ready for the community to examine.\n\nYour support has been a steady companion on this road. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-047",
+      "body": "The order has been carried out, and I can report its result with confidence: our newest RJS release is ready for the community to examine.\n\nEvery companion who has lent their time has helped bring us here. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-048",
+      "body": "Let the company gather; there is worthy news from the RJS front: our newest RJS release is ready for the community to examine.\n\nI thank those who waited for this report and those who helped make it possible. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-049",
+      "body": "I bring a dispatch from the workbench and the field: another completed stage of the project has been made public.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-050",
+      "body": "The latest report has reached me, and I am pleased to place it before you: another completed stage of the project has been made public.\n\nYour continued interest gives purpose to the work placed before us. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-051",
+      "body": "Word has arrived from those entrusted with this undertaking: another completed stage of the project has been made public.\n\nThose who return to our hall after each new undertaking deserve a clear account. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-052",
+      "body": "A captain must see that good work is properly reported. I can now confirm: another completed stage of the project has been made public.\n\nThe work is now in your hands, and my thanks go with it. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-053",
+      "body": "The watch has brought its findings before the command: another completed stage of the project has been made public.\n\nLet the record show my respect for everyone who helped bring this work forward. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-054",
+      "body": "Our company has made ready its latest work, and the result is clear: another completed stage of the project has been made public.\n\nThose who have kept watch over this undertaking have my gratitude. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-055",
+      "body": "Allow me to deliver the news carried back from our latest campaign: another completed stage of the project has been made public.\n\nThe merit of this progress belongs to all who contributed to it. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-056",
+      "body": "The record of the Revenant Job System receives a new entry: another completed stage of the project has been made public.\n\nI offer my thanks to those who have stood with this work through each stage. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-057",
+      "body": "I have returned with news for all who have stood beside this project: another completed stage of the project has been made public.\n\nA good company honours the effort of its members; I do the same here. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-058",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: another completed stage of the project has been made public.\n\nThe patience of this community has not gone unnoticed. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-059",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: another completed stage of the project has been made public.\n\nI would have this achievement shared with every companion who helped us reach it. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-060",
+      "body": "The messengers have arrived with a report I am glad to share: another completed stage of the project has been made public.\n\nI am grateful to all who continue to accompany the Revenant Job System. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-061",
+      "body": "Our efforts have reached a point worthy of announcement: another completed stage of the project has been made public.\n\nTo all who have followed our progress with patience, accept my sincere thanks. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-062",
+      "body": "I would not keep this news from those who have followed our progress: another completed stage of the project has been made public.\n\nYour support has been a steady companion on this road. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-063",
+      "body": "The order has been carried out, and I can report its result with confidence: another completed stage of the project has been made public.\n\nEvery companion who has lent their time has helped bring us here. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-064",
+      "body": "Let the company gather; there is worthy news from the RJS front: another completed stage of the project has been made public.\n\nI thank those who waited for this report and those who helped make it possible. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-065",
+      "body": "I bring a dispatch from the workbench and the field: the latest work has been prepared and released for all who follow it.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-066",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the latest work has been prepared and released for all who follow it.\n\nYour continued interest gives purpose to the work placed before us. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-067",
+      "body": "Word has arrived from those entrusted with this undertaking: the latest work has been prepared and released for all who follow it.\n\nThose who return to our hall after each new undertaking deserve a clear account. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-068",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the latest work has been prepared and released for all who follow it.\n\nThe work is now in your hands, and my thanks go with it. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-069",
+      "body": "The watch has brought its findings before the command: the latest work has been prepared and released for all who follow it.\n\nLet the record show my respect for everyone who helped bring this work forward. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-070",
+      "body": "Our company has made ready its latest work, and the result is clear: the latest work has been prepared and released for all who follow it.\n\nThose who have kept watch over this undertaking have my gratitude. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-071",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the latest work has been prepared and released for all who follow it.\n\nThe merit of this progress belongs to all who contributed to it. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-072",
+      "body": "The record of the Revenant Job System receives a new entry: the latest work has been prepared and released for all who follow it.\n\nI offer my thanks to those who have stood with this work through each stage. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-073",
+      "body": "I have returned with news for all who have stood beside this project: the latest work has been prepared and released for all who follow it.\n\nA good company honours the effort of its members; I do the same here. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-074",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the latest work has been prepared and released for all who follow it.\n\nThe patience of this community has not gone unnoticed. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-075",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the latest work has been prepared and released for all who follow it.\n\nI would have this achievement shared with every companion who helped us reach it. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-076",
+      "body": "The messengers have arrived with a report I am glad to share: the latest work has been prepared and released for all who follow it.\n\nI am grateful to all who continue to accompany the Revenant Job System. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-077",
+      "body": "Our efforts have reached a point worthy of announcement: the latest work has been prepared and released for all who follow it.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-078",
+      "body": "I would not keep this news from those who have followed our progress: the latest work has been prepared and released for all who follow it.\n\nYour support has been a steady companion on this road. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-079",
+      "body": "The order has been carried out, and I can report its result with confidence: the latest work has been prepared and released for all who follow it.\n\nEvery companion who has lent their time has helped bring us here. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-080",
+      "body": "Let the company gather; there is worthy news from the RJS front: the latest work has been prepared and released for all who follow it.\n\nI thank those who waited for this report and those who helped make it possible. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-081",
+      "body": "I bring a dispatch from the workbench and the field: a new version has passed into the hands of the community.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-082",
+      "body": "The latest report has reached me, and I am pleased to place it before you: a new version has passed into the hands of the community.\n\nYour continued interest gives purpose to the work placed before us. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-083",
+      "body": "Word has arrived from those entrusted with this undertaking: a new version has passed into the hands of the community.\n\nThose who return to our hall after each new undertaking deserve a clear account. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-084",
+      "body": "A captain must see that good work is properly reported. I can now confirm: a new version has passed into the hands of the community.\n\nThe work is now in your hands, and my thanks go with it. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-085",
+      "body": "The watch has brought its findings before the command: a new version has passed into the hands of the community.\n\nLet the record show my respect for everyone who helped bring this work forward. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-086",
+      "body": "Our company has made ready its latest work, and the result is clear: a new version has passed into the hands of the community.\n\nThose who have kept watch over this undertaking have my gratitude. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-087",
+      "body": "Allow me to deliver the news carried back from our latest campaign: a new version has passed into the hands of the community.\n\nThe merit of this progress belongs to all who contributed to it. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-088",
+      "body": "The record of the Revenant Job System receives a new entry: a new version has passed into the hands of the community.\n\nI offer my thanks to those who have stood with this work through each stage. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-089",
+      "body": "I have returned with news for all who have stood beside this project: a new version has passed into the hands of the community.\n\nA good company honours the effort of its members; I do the same here. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-090",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: a new version has passed into the hands of the community.\n\nThe patience of this community has not gone unnoticed. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-091",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: a new version has passed into the hands of the community.\n\nI would have this achievement shared with every companion who helped us reach it. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-092",
+      "body": "The messengers have arrived with a report I am glad to share: a new version has passed into the hands of the community.\n\nI am grateful to all who continue to accompany the Revenant Job System. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-093",
+      "body": "Our efforts have reached a point worthy of announcement: a new version has passed into the hands of the community.\n\nTo all who have followed our progress with patience, accept my sincere thanks. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-094",
+      "body": "I would not keep this news from those who have followed our progress: a new version has passed into the hands of the community.\n\nYour support has been a steady companion on this road. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-095",
+      "body": "The order has been carried out, and I can report its result with confidence: a new version has passed into the hands of the community.\n\nEvery companion who has lent their time has helped bring us here. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-096",
+      "body": "Let the company gather; there is worthy news from the RJS front: a new version has passed into the hands of the community.\n\nI thank those who waited for this report and those who helped make it possible. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-097",
+      "body": "I bring a dispatch from the workbench and the field: the latest RJS package is now available through its official release entry.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-098",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the latest RJS package is now available through its official release entry.\n\nYour continued interest gives purpose to the work placed before us. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-099",
+      "body": "Word has arrived from those entrusted with this undertaking: the latest RJS package is now available through its official release entry.\n\nThose who return to our hall after each new undertaking deserve a clear account. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-100",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the latest RJS package is now available through its official release entry.\n\nThe work is now in your hands, and my thanks go with it. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-101",
+      "body": "The watch has brought its findings before the command: the latest RJS package is now available through its official release entry.\n\nLet the record show my respect for everyone who helped bring this work forward. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-102",
+      "body": "Our company has made ready its latest work, and the result is clear: the latest RJS package is now available through its official release entry.\n\nThose who have kept watch over this undertaking have my gratitude. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-103",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the latest RJS package is now available through its official release entry.\n\nThe merit of this progress belongs to all who contributed to it. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-104",
+      "body": "The record of the Revenant Job System receives a new entry: the latest RJS package is now available through its official release entry.\n\nI offer my thanks to those who have stood with this work through each stage. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-105",
+      "body": "I have returned with news for all who have stood beside this project: the latest RJS package is now available through its official release entry.\n\nA good company honours the effort of its members; I do the same here. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-106",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the latest RJS package is now available through its official release entry.\n\nThe patience of this community has not gone unnoticed. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-107",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the latest RJS package is now available through its official release entry.\n\nI would have this achievement shared with every companion who helped us reach it. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-108",
+      "body": "The messengers have arrived with a report I am glad to share: the latest RJS package is now available through its official release entry.\n\nI am grateful to all who continue to accompany the Revenant Job System. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-109",
+      "body": "Our efforts have reached a point worthy of announcement: the latest RJS package is now available through its official release entry.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-110",
+      "body": "I would not keep this news from those who have followed our progress: the latest RJS package is now available through its official release entry.\n\nYour support has been a steady companion on this road. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-111",
+      "body": "The order has been carried out, and I can report its result with confidence: the latest RJS package is now available through its official release entry.\n\nEvery companion who has lent their time has helped bring us here. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-112",
+      "body": "Let the company gather; there is worthy news from the RJS front: the latest RJS package is now available through its official release entry.\n\nI thank those who waited for this report and those who helped make it possible. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-113",
+      "body": "I bring a dispatch from the workbench and the field: our work has advanced, and the newest release is now ready.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-114",
+      "body": "The latest report has reached me, and I am pleased to place it before you: our work has advanced, and the newest release is now ready.\n\nYour continued interest gives purpose to the work placed before us. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-115",
+      "body": "Word has arrived from those entrusted with this undertaking: our work has advanced, and the newest release is now ready.\n\nThose who return to our hall after each new undertaking deserve a clear account. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-116",
+      "body": "A captain must see that good work is properly reported. I can now confirm: our work has advanced, and the newest release is now ready.\n\nThe work is now in your hands, and my thanks go with it. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-117",
+      "body": "The watch has brought its findings before the command: our work has advanced, and the newest release is now ready.\n\nLet the record show my respect for everyone who helped bring this work forward. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-118",
+      "body": "Our company has made ready its latest work, and the result is clear: our work has advanced, and the newest release is now ready.\n\nThose who have kept watch over this undertaking have my gratitude. The next step is yours: examine the notes and obtain the release from its official page."
+    },
+    {
+      "id": "release-119",
+      "body": "Allow me to deliver the news carried back from our latest campaign: our work has advanced, and the newest release is now ready.\n\nThe merit of this progress belongs to all who contributed to it. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-120",
+      "body": "The record of the Revenant Job System receives a new entry: our work has advanced, and the newest release is now ready.\n\nI offer my thanks to those who have stood with this work through each stage. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-121",
+      "body": "I have returned with news for all who have stood beside this project: our work has advanced, and the newest release is now ready.\n\nA good company honours the effort of its members; I do the same here. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-122",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: our work has advanced, and the newest release is now ready.\n\nThe patience of this community has not gone unnoticed. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-123",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: our work has advanced, and the newest release is now ready.\n\nI would have this achievement shared with every companion who helped us reach it. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-124",
+      "body": "The messengers have arrived with a report I am glad to share: our work has advanced, and the newest release is now ready.\n\nI am grateful to all who continue to accompany the Revenant Job System. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-125",
+      "body": "Our efforts have reached a point worthy of announcement: our work has advanced, and the newest release is now ready.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-126",
+      "body": "I would not keep this news from those who have followed our progress: our work has advanced, and the newest release is now ready.\n\nYour support has been a steady companion on this road. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-127",
+      "body": "The order has been carried out, and I can report its result with confidence: our work has advanced, and the newest release is now ready.\n\nEvery companion who has lent their time has helped bring us here. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-128",
+      "body": "Let the company gather; there is worthy news from the RJS front: our work has advanced, and the newest release is now ready.\n\nI thank those who waited for this report and those who helped make it possible. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-129",
+      "body": "I bring a dispatch from the workbench and the field: the most recent version is published, with its record of changes prepared.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-130",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the most recent version is published, with its record of changes prepared.\n\nYour continued interest gives purpose to the work placed before us. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-131",
+      "body": "Word has arrived from those entrusted with this undertaking: the most recent version is published, with its record of changes prepared.\n\nThose who return to our hall after each new undertaking deserve a clear account. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-132",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the most recent version is published, with its record of changes prepared.\n\nThe work is now in your hands, and my thanks go with it. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-133",
+      "body": "The watch has brought its findings before the command: the most recent version is published, with its record of changes prepared.\n\nLet the record show my respect for everyone who helped bring this work forward. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-134",
+      "body": "Our company has made ready its latest work, and the result is clear: the most recent version is published, with its record of changes prepared.\n\nThose who have kept watch over this undertaking have my gratitude. Read the release notes before setting out, and consult the official entry for the package."
+    },
+    {
+      "id": "release-135",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the most recent version is published, with its record of changes prepared.\n\nThe merit of this progress belongs to all who contributed to it. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-136",
+      "body": "The record of the Revenant Job System receives a new entry: the most recent version is published, with its record of changes prepared.\n\nI offer my thanks to those who have stood with this work through each stage. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-137",
+      "body": "I have returned with news for all who have stood beside this project: the most recent version is published, with its record of changes prepared.\n\nA good company honours the effort of its members; I do the same here. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-138",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the most recent version is published, with its record of changes prepared.\n\nThe patience of this community has not gone unnoticed. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-139",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the most recent version is published, with its record of changes prepared.\n\nI would have this achievement shared with every companion who helped us reach it. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-140",
+      "body": "The messengers have arrived with a report I am glad to share: the most recent version is published, with its record of changes prepared.\n\nI am grateful to all who continue to accompany the Revenant Job System. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-141",
+      "body": "Our efforts have reached a point worthy of announcement: the most recent version is published, with its record of changes prepared.\n\nTo all who have followed our progress with patience, accept my sincere thanks. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-142",
+      "body": "I would not keep this news from those who have followed our progress: the most recent version is published, with its record of changes prepared.\n\nYour support has been a steady companion on this road. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-143",
+      "body": "The order has been carried out, and I can report its result with confidence: the most recent version is published, with its record of changes prepared.\n\nEvery companion who has lent their time has helped bring us here. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-144",
+      "body": "Let the company gather; there is worthy news from the RJS front: the most recent version is published, with its record of changes prepared.\n\nI thank those who waited for this report and those who helped make it possible. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-145",
+      "body": "I bring a dispatch from the workbench and the field: the latest chapter of the Revenant Job System is open for your review.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-146",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the latest chapter of the Revenant Job System is open for your review.\n\nYour continued interest gives purpose to the work placed before us. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-147",
+      "body": "Word has arrived from those entrusted with this undertaking: the latest chapter of the Revenant Job System is open for your review.\n\nThose who return to our hall after each new undertaking deserve a clear account. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-148",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the latest chapter of the Revenant Job System is open for your review.\n\nThe work is now in your hands, and my thanks go with it. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-149",
+      "body": "The watch has brought its findings before the command: the latest chapter of the Revenant Job System is open for your review.\n\nLet the record show my respect for everyone who helped bring this work forward. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-150",
+      "body": "Our company has made ready its latest work, and the result is clear: the latest chapter of the Revenant Job System is open for your review.\n\nThose who have kept watch over this undertaking have my gratitude. The official entry provides the details needed to take up this version."
+    },
+    {
+      "id": "release-151",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the latest chapter of the Revenant Job System is open for your review.\n\nThe merit of this progress belongs to all who contributed to it. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-152",
+      "body": "The record of the Revenant Job System receives a new entry: the latest chapter of the Revenant Job System is open for your review.\n\nI offer my thanks to those who have stood with this work through each stage. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-153",
+      "body": "I have returned with news for all who have stood beside this project: the latest chapter of the Revenant Job System is open for your review.\n\nA good company honours the effort of its members; I do the same here. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-154",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the latest chapter of the Revenant Job System is open for your review.\n\nThe patience of this community has not gone unnoticed. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-155",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the latest chapter of the Revenant Job System is open for your review.\n\nI would have this achievement shared with every companion who helped us reach it. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-156",
+      "body": "The messengers have arrived with a report I am glad to share: the latest chapter of the Revenant Job System is open for your review.\n\nI am grateful to all who continue to accompany the Revenant Job System. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-157",
+      "body": "Our efforts have reached a point worthy of announcement: the latest chapter of the Revenant Job System is open for your review.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-158",
+      "body": "I would not keep this news from those who have followed our progress: the latest chapter of the Revenant Job System is open for your review.\n\nYour support has been a steady companion on this road. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-159",
+      "body": "The order has been carried out, and I can report its result with confidence: the latest chapter of the Revenant Job System is open for your review.\n\nEvery companion who has lent their time has helped bring us here. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-160",
+      "body": "Let the company gather; there is worthy news from the RJS front: the latest chapter of the Revenant Job System is open for your review.\n\nI thank those who waited for this report and those who helped make it possible. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-161",
+      "body": "I bring a dispatch from the workbench and the field: the newest release has been entered into the project's public record.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-162",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the newest release has been entered into the project's public record.\n\nYour continued interest gives purpose to the work placed before us. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-163",
+      "body": "Word has arrived from those entrusted with this undertaking: the newest release has been entered into the project's public record.\n\nThose who return to our hall after each new undertaking deserve a clear account. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-164",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the newest release has been entered into the project's public record.\n\nThe work is now in your hands, and my thanks go with it. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-165",
+      "body": "The watch has brought its findings before the command: the newest release has been entered into the project's public record.\n\nLet the record show my respect for everyone who helped bring this work forward. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-166",
+      "body": "Our company has made ready its latest work, and the result is clear: the newest release has been entered into the project's public record.\n\nThose who have kept watch over this undertaking have my gratitude. The full account and the download are waiting in the official release entry."
+    },
+    {
+      "id": "release-167",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the newest release has been entered into the project's public record.\n\nThe merit of this progress belongs to all who contributed to it. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-168",
+      "body": "The record of the Revenant Job System receives a new entry: the newest release has been entered into the project's public record.\n\nI offer my thanks to those who have stood with this work through each stage. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-169",
+      "body": "I have returned with news for all who have stood beside this project: the newest release has been entered into the project's public record.\n\nA good company honours the effort of its members; I do the same here. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-170",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the newest release has been entered into the project's public record.\n\nThe patience of this community has not gone unnoticed. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-171",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the newest release has been entered into the project's public record.\n\nI would have this achievement shared with every companion who helped us reach it. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-172",
+      "body": "The messengers have arrived with a report I am glad to share: the newest release has been entered into the project's public record.\n\nI am grateful to all who continue to accompany the Revenant Job System. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-173",
+      "body": "Our efforts have reached a point worthy of announcement: the newest release has been entered into the project's public record.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-174",
+      "body": "I would not keep this news from those who have followed our progress: the newest release has been entered into the project's public record.\n\nYour support has been a steady companion on this road. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-175",
+      "body": "The order has been carried out, and I can report its result with confidence: the newest release has been entered into the project's public record.\n\nEvery companion who has lent their time has helped bring us here. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-176",
+      "body": "Let the company gather; there is worthy news from the RJS front: the newest release has been entered into the project's public record.\n\nI thank those who waited for this report and those who helped make it possible. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-177",
+      "body": "I bring a dispatch from the workbench and the field: the work entrusted to our hands has produced a new public version.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-178",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the work entrusted to our hands has produced a new public version.\n\nYour continued interest gives purpose to the work placed before us. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-179",
+      "body": "Word has arrived from those entrusted with this undertaking: the work entrusted to our hands has produced a new public version.\n\nThose who return to our hall after each new undertaking deserve a clear account. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-180",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the work entrusted to our hands has produced a new public version.\n\nThe work is now in your hands, and my thanks go with it. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-181",
+      "body": "The watch has brought its findings before the command: the work entrusted to our hands has produced a new public version.\n\nLet the record show my respect for everyone who helped bring this work forward. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-182",
+      "body": "Our company has made ready its latest work, and the result is clear: the work entrusted to our hands has produced a new public version.\n\nThose who have kept watch over this undertaking have my gratitude. Find the full record of this work, along with the package, in the release notes."
+    },
+    {
+      "id": "release-183",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the work entrusted to our hands has produced a new public version.\n\nThe merit of this progress belongs to all who contributed to it. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-184",
+      "body": "The record of the Revenant Job System receives a new entry: the work entrusted to our hands has produced a new public version.\n\nI offer my thanks to those who have stood with this work through each stage. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-185",
+      "body": "I have returned with news for all who have stood beside this project: the work entrusted to our hands has produced a new public version.\n\nA good company honours the effort of its members; I do the same here. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-186",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the work entrusted to our hands has produced a new public version.\n\nThe patience of this community has not gone unnoticed. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-187",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the work entrusted to our hands has produced a new public version.\n\nI would have this achievement shared with every companion who helped us reach it. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-188",
+      "body": "The messengers have arrived with a report I am glad to share: the work entrusted to our hands has produced a new public version.\n\nI am grateful to all who continue to accompany the Revenant Job System. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-189",
+      "body": "Our efforts have reached a point worthy of announcement: the work entrusted to our hands has produced a new public version.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-190",
+      "body": "I would not keep this news from those who have followed our progress: the work entrusted to our hands has produced a new public version.\n\nYour support has been a steady companion on this road. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-191",
+      "body": "The order has been carried out, and I can report its result with confidence: the work entrusted to our hands has produced a new public version.\n\nEvery companion who has lent their time has helped bring us here. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-192",
+      "body": "Let the company gather; there is worthy news from the RJS front: the work entrusted to our hands has produced a new public version.\n\nI thank those who waited for this report and those who helped make it possible. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-193",
+      "body": "I bring a dispatch from the workbench and the field: the Revenant Job System has taken another step forward with this release.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-194",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the Revenant Job System has taken another step forward with this release.\n\nYour continued interest gives purpose to the work placed before us. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-195",
+      "body": "Word has arrived from those entrusted with this undertaking: the Revenant Job System has taken another step forward with this release.\n\nThose who return to our hall after each new undertaking deserve a clear account. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-196",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the Revenant Job System has taken another step forward with this release.\n\nThe work is now in your hands, and my thanks go with it. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-197",
+      "body": "The watch has brought its findings before the command: the Revenant Job System has taken another step forward with this release.\n\nLet the record show my respect for everyone who helped bring this work forward. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-198",
+      "body": "Our company has made ready its latest work, and the result is clear: the Revenant Job System has taken another step forward with this release.\n\nThose who have kept watch over this undertaking have my gratitude. You will find the changelog and the package together in the release entry."
+    },
+    {
+      "id": "release-199",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the Revenant Job System has taken another step forward with this release.\n\nThe merit of this progress belongs to all who contributed to it. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-200",
+      "body": "The record of the Revenant Job System receives a new entry: the Revenant Job System has taken another step forward with this release.\n\nI offer my thanks to those who have stood with this work through each stage. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-201",
+      "body": "I have returned with news for all who have stood beside this project: the Revenant Job System has taken another step forward with this release.\n\nA good company honours the effort of its members; I do the same here. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-202",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the Revenant Job System has taken another step forward with this release.\n\nThe patience of this community has not gone unnoticed. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-203",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the Revenant Job System has taken another step forward with this release.\n\nI would have this achievement shared with every companion who helped us reach it. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-204",
+      "body": "The messengers have arrived with a report I am glad to share: the Revenant Job System has taken another step forward with this release.\n\nI am grateful to all who continue to accompany the Revenant Job System. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-205",
+      "body": "Our efforts have reached a point worthy of announcement: the Revenant Job System has taken another step forward with this release.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-206",
+      "body": "I would not keep this news from those who have followed our progress: the Revenant Job System has taken another step forward with this release.\n\nYour support has been a steady companion on this road. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-207",
+      "body": "The order has been carried out, and I can report its result with confidence: the Revenant Job System has taken another step forward with this release.\n\nEvery companion who has lent their time has helped bring us here. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-208",
+      "body": "Let the company gather; there is worthy news from the RJS front: the Revenant Job System has taken another step forward with this release.\n\nI thank those who waited for this report and those who helped make it possible. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-209",
+      "body": "I bring a dispatch from the workbench and the field: our latest efforts are now gathered in a new version of RJS.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-210",
+      "body": "The latest report has reached me, and I am pleased to place it before you: our latest efforts are now gathered in a new version of RJS.\n\nYour continued interest gives purpose to the work placed before us. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-211",
+      "body": "Word has arrived from those entrusted with this undertaking: our latest efforts are now gathered in a new version of RJS.\n\nThose who return to our hall after each new undertaking deserve a clear account. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-212",
+      "body": "A captain must see that good work is properly reported. I can now confirm: our latest efforts are now gathered in a new version of RJS.\n\nThe work is now in your hands, and my thanks go with it. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-213",
+      "body": "The watch has brought its findings before the command: our latest efforts are now gathered in a new version of RJS.\n\nLet the record show my respect for everyone who helped bring this work forward. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-214",
+      "body": "Our company has made ready its latest work, and the result is clear: our latest efforts are now gathered in a new version of RJS.\n\nThose who have kept watch over this undertaking have my gratitude. Read what has changed, then decide how best to carry the work forward."
+    },
+    {
+      "id": "release-215",
+      "body": "Allow me to deliver the news carried back from our latest campaign: our latest efforts are now gathered in a new version of RJS.\n\nThe merit of this progress belongs to all who contributed to it. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-216",
+      "body": "The record of the Revenant Job System receives a new entry: our latest efforts are now gathered in a new version of RJS.\n\nI offer my thanks to those who have stood with this work through each stage. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-217",
+      "body": "I have returned with news for all who have stood beside this project: our latest efforts are now gathered in a new version of RJS.\n\nA good company honours the effort of its members; I do the same here. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-218",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: our latest efforts are now gathered in a new version of RJS.\n\nThe patience of this community has not gone unnoticed. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-219",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: our latest efforts are now gathered in a new version of RJS.\n\nI would have this achievement shared with every companion who helped us reach it. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-220",
+      "body": "The messengers have arrived with a report I am glad to share: our latest efforts are now gathered in a new version of RJS.\n\nI am grateful to all who continue to accompany the Revenant Job System. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-221",
+      "body": "Our efforts have reached a point worthy of announcement: our latest efforts are now gathered in a new version of RJS.\n\nTo all who have followed our progress with patience, accept my sincere thanks. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-222",
+      "body": "I would not keep this news from those who have followed our progress: our latest efforts are now gathered in a new version of RJS.\n\nYour support has been a steady companion on this road. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-223",
+      "body": "The order has been carried out, and I can report its result with confidence: our latest efforts are now gathered in a new version of RJS.\n\nEvery companion who has lent their time has helped bring us here. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-224",
+      "body": "Let the company gather; there is worthy news from the RJS front: our latest efforts are now gathered in a new version of RJS.\n\nI thank those who waited for this report and those who helped make it possible. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-225",
+      "body": "I bring a dispatch from the workbench and the field: the newest public build is ready to be taken up and examined.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-226",
+      "body": "The latest report has reached me, and I am pleased to place it before you: the newest public build is ready to be taken up and examined.\n\nYour continued interest gives purpose to the work placed before us. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-227",
+      "body": "Word has arrived from those entrusted with this undertaking: the newest public build is ready to be taken up and examined.\n\nThose who return to our hall after each new undertaking deserve a clear account. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-228",
+      "body": "A captain must see that good work is properly reported. I can now confirm: the newest public build is ready to be taken up and examined.\n\nThe work is now in your hands, and my thanks go with it. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-229",
+      "body": "The watch has brought its findings before the command: the newest public build is ready to be taken up and examined.\n\nLet the record show my respect for everyone who helped bring this work forward. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-230",
+      "body": "Our company has made ready its latest work, and the result is clear: the newest public build is ready to be taken up and examined.\n\nThose who have kept watch over this undertaking have my gratitude. Consult the release page for the complete account and the available download."
+    },
+    {
+      "id": "release-231",
+      "body": "Allow me to deliver the news carried back from our latest campaign: the newest public build is ready to be taken up and examined.\n\nThe merit of this progress belongs to all who contributed to it. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-232",
+      "body": "The record of the Revenant Job System receives a new entry: the newest public build is ready to be taken up and examined.\n\nI offer my thanks to those who have stood with this work through each stage. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-233",
+      "body": "I have returned with news for all who have stood beside this project: the newest public build is ready to be taken up and examined.\n\nA good company honours the effort of its members; I do the same here. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-234",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: the newest public build is ready to be taken up and examined.\n\nThe patience of this community has not gone unnoticed. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-235",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: the newest public build is ready to be taken up and examined.\n\nI would have this achievement shared with every companion who helped us reach it. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-236",
+      "body": "The messengers have arrived with a report I am glad to share: the newest public build is ready to be taken up and examined.\n\nI am grateful to all who continue to accompany the Revenant Job System. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-237",
+      "body": "Our efforts have reached a point worthy of announcement: the newest public build is ready to be taken up and examined.\n\nTo all who have followed our progress with patience, accept my sincere thanks. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-238",
+      "body": "I would not keep this news from those who have followed our progress: the newest public build is ready to be taken up and examined.\n\nYour support has been a steady companion on this road. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-239",
+      "body": "The order has been carried out, and I can report its result with confidence: the newest public build is ready to be taken up and examined.\n\nEvery companion who has lent their time has helped bring us here. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-240",
+      "body": "Let the company gather; there is worthy news from the RJS front: the newest public build is ready to be taken up and examined.\n\nI thank those who waited for this report and those who helped make it possible. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-241",
+      "body": "I bring a dispatch from the workbench and the field: a fresh release of the project is now available to our companions.\n\nNo campaign is carried by one sword alone; I recognize every helping hand. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-242",
+      "body": "The latest report has reached me, and I am pleased to place it before you: a fresh release of the project is now available to our companions.\n\nYour continued interest gives purpose to the work placed before us. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-243",
+      "body": "Word has arrived from those entrusted with this undertaking: a fresh release of the project is now available to our companions.\n\nThose who return to our hall after each new undertaking deserve a clear account. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-244",
+      "body": "A captain must see that good work is properly reported. I can now confirm: a fresh release of the project is now available to our companions.\n\nThe work is now in your hands, and my thanks go with it. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-245",
+      "body": "The watch has brought its findings before the command: a fresh release of the project is now available to our companions.\n\nLet the record show my respect for everyone who helped bring this work forward. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-246",
+      "body": "Our company has made ready its latest work, and the result is clear: a fresh release of the project is now available to our companions.\n\nThose who have kept watch over this undertaking have my gratitude. May this release serve you well; its notes and download are ready for inspection."
+    },
+    {
+      "id": "release-247",
+      "body": "Allow me to deliver the news carried back from our latest campaign: a fresh release of the project is now available to our companions.\n\nThe merit of this progress belongs to all who contributed to it. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-248",
+      "body": "The record of the Revenant Job System receives a new entry: a fresh release of the project is now available to our companions.\n\nI offer my thanks to those who have stood with this work through each stage. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-249",
+      "body": "I have returned with news for all who have stood beside this project: a fresh release of the project is now available to our companions.\n\nA good company honours the effort of its members; I do the same here. Those ready to continue will find the download and its account in the official entry."
+    },
+    {
+      "id": "release-250",
+      "body": "The latest undertaking has passed from the hands of its makers to the community: a fresh release of the project is now available to our companions.\n\nThe patience of this community has not gone unnoticed. Review the changes at your own pace; the release page contains the details and download."
+    },
+    {
+      "id": "release-251",
+      "body": "From the forge comes a finished work, ready to be placed in your hands: a fresh release of the project is now available to our companions.\n\nI would have this achievement shared with every companion who helped us reach it. May you find the new work worthy of the journey; the details are recorded with the release."
+    },
+    {
+      "id": "release-252",
+      "body": "The messengers have arrived with a report I am glad to share: a fresh release of the project is now available to our companions.\n\nI am grateful to all who continue to accompany the Revenant Job System. Let the changelog serve as your field report before you proceed."
+    },
+    {
+      "id": "release-253",
+      "body": "Our efforts have reached a point worthy of announcement: a fresh release of the project is now available to our companions.\n\nTo all who have followed our progress with patience, accept my sincere thanks. The details have been set down for your review, with the package available alongside them."
+    },
+    {
+      "id": "release-254",
+      "body": "I would not keep this news from those who have followed our progress: a fresh release of the project is now available to our companions.\n\nYour support has been a steady companion on this road. Take a moment to inspect the recorded changes before putting this version to use."
+    },
+    {
+      "id": "release-255",
+      "body": "The order has been carried out, and I can report its result with confidence: a fresh release of the project is now available to our companions.\n\nEvery companion who has lent their time has helped bring us here. Keep the release record close; it contains the changes made on this stage of the journey."
+    },
+    {
+      "id": "release-256",
+      "body": "Let the company gather; there is worthy news from the RJS front: a fresh release of the project is now available to our companions.\n\nI thank those who waited for this report and those who helped make it possible. Those ready to continue will find the download and its account in the official entry."
+    }
+  ],
+  "update_announcements": [
+    {
+      "id": "update-001",
+      "body": "I bring a fresh report from the RJS workbench: the Revenant Job System has received a further update.\n\nThose still at their posts have my respect, as do those awaiting our reports. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-002",
+      "body": "The latest dispatch concerns progress made since our previous account: the Revenant Job System has received a further update.\n\nEvery careful improvement brings the work closer to its intended standard. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-003",
+      "body": "Our companions remain at their posts, and their latest work shows: the Revenant Job System has received a further update.\n\nI thank every companion who continues to follow this work in progress. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-004",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the Revenant Job System has received a further update.\n\nWe shall judge our progress by the care of the work, not by haste. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-005",
+      "body": "The project ledger has been amended with the following news: the Revenant Job System has received a further update.\n\nLet this report acknowledge the people whose effort keeps the project moving. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-006",
+      "body": "Word has reached the hall from those still working on the task: the Revenant Job System has received a further update.\n\nTo those who continue to keep watch, I offer my thanks. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-007",
+      "body": "The work continues, and I have a new account to place before you: the Revenant Job System has received a further update.\n\nI will not call the campaign complete while work remains to be done. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-008",
+      "body": "Allow me to report what has changed in the Revenant Job System: the Revenant Job System has received a further update.\n\nI recognize the patience of those who remain with us between releases. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-009",
+      "body": "Our latest round of work has produced news worth sharing: the Revenant Job System has received a further update.\n\nThe duty continues, and I am grateful to have you alongside us. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-010",
+      "body": "The watch has not been idle. The latest progress is as follows: the Revenant Job System has received a further update.\n\nA worthy undertaking is built through many careful efforts. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-011",
+      "body": "I have received the newest account from the RJS team: the Revenant Job System has received a further update.\n\nI offer my respect to the hands still shaping this project. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-012",
+      "body": "The next report from our ongoing undertaking is ready: the Revenant Job System has received a further update.\n\nThe road remains before us, and your support helps us travel it. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-013",
+      "body": "Those following the campaign deserve to know where the work now stands: the Revenant Job System has received a further update.\n\nThank you for remaining with the Revenant Job System as it develops. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-014",
+      "body": "The hands at the forge have sent word of their latest efforts: the Revenant Job System has received a further update.\n\nYour attention is valued, even while the larger task remains underway. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-015",
+      "body": "We have not yet reached the end of our task, but I can report: the Revenant Job System has received a further update.\n\nThe work is not finished, but every sound step deserves notice. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-016",
+      "body": "Let this message serve as the latest field report from our project: the Revenant Job System has received a further update.\n\nThose who have waited patiently deserve to know what has changed. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-017",
+      "body": "I bring a fresh report from the RJS workbench: new work on RJS has been made available for review.\n\nThose still at their posts have my respect, as do those awaiting our reports. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-018",
+      "body": "The latest dispatch concerns progress made since our previous account: new work on RJS has been made available for review.\n\nEvery careful improvement brings the work closer to its intended standard. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-019",
+      "body": "Our companions remain at their posts, and their latest work shows: new work on RJS has been made available for review.\n\nI thank every companion who continues to follow this work in progress. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-020",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: new work on RJS has been made available for review.\n\nWe shall judge our progress by the care of the work, not by haste. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-021",
+      "body": "The project ledger has been amended with the following news: new work on RJS has been made available for review.\n\nLet this report acknowledge the people whose effort keeps the project moving. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-022",
+      "body": "Word has reached the hall from those still working on the task: new work on RJS has been made available for review.\n\nTo those who continue to keep watch, I offer my thanks. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-023",
+      "body": "The work continues, and I have a new account to place before you: new work on RJS has been made available for review.\n\nI will not call the campaign complete while work remains to be done. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-024",
+      "body": "Allow me to report what has changed in the Revenant Job System: new work on RJS has been made available for review.\n\nI recognize the patience of those who remain with us between releases. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-025",
+      "body": "Our latest round of work has produced news worth sharing: new work on RJS has been made available for review.\n\nThe duty continues, and I am grateful to have you alongside us. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-026",
+      "body": "The watch has not been idle. The latest progress is as follows: new work on RJS has been made available for review.\n\nA worthy undertaking is built through many careful efforts. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-027",
+      "body": "I have received the newest account from the RJS team: new work on RJS has been made available for review.\n\nI offer my respect to the hands still shaping this project. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-028",
+      "body": "The next report from our ongoing undertaking is ready: new work on RJS has been made available for review.\n\nThe road remains before us, and your support helps us travel it. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-029",
+      "body": "Those following the campaign deserve to know where the work now stands: new work on RJS has been made available for review.\n\nThank you for remaining with the Revenant Job System as it develops. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-030",
+      "body": "The hands at the forge have sent word of their latest efforts: new work on RJS has been made available for review.\n\nYour attention is valued, even while the larger task remains underway. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-031",
+      "body": "We have not yet reached the end of our task, but I can report: new work on RJS has been made available for review.\n\nThe work is not finished, but every sound step deserves notice. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-032",
+      "body": "Let this message serve as the latest field report from our project: new work on RJS has been made available for review.\n\nThose who have waited patiently deserve to know what has changed. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-033",
+      "body": "I bring a fresh report from the RJS workbench: the latest changes to the project are now ready to be examined.\n\nThose still at their posts have my respect, as do those awaiting our reports. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-034",
+      "body": "The latest dispatch concerns progress made since our previous account: the latest changes to the project are now ready to be examined.\n\nEvery careful improvement brings the work closer to its intended standard. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-035",
+      "body": "Our companions remain at their posts, and their latest work shows: the latest changes to the project are now ready to be examined.\n\nI thank every companion who continues to follow this work in progress. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-036",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the latest changes to the project are now ready to be examined.\n\nWe shall judge our progress by the care of the work, not by haste. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-037",
+      "body": "The project ledger has been amended with the following news: the latest changes to the project are now ready to be examined.\n\nLet this report acknowledge the people whose effort keeps the project moving. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-038",
+      "body": "Word has reached the hall from those still working on the task: the latest changes to the project are now ready to be examined.\n\nTo those who continue to keep watch, I offer my thanks. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-039",
+      "body": "The work continues, and I have a new account to place before you: the latest changes to the project are now ready to be examined.\n\nI will not call the campaign complete while work remains to be done. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-040",
+      "body": "Allow me to report what has changed in the Revenant Job System: the latest changes to the project are now ready to be examined.\n\nI recognize the patience of those who remain with us between releases. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-041",
+      "body": "Our latest round of work has produced news worth sharing: the latest changes to the project are now ready to be examined.\n\nThe duty continues, and I am grateful to have you alongside us. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-042",
+      "body": "The watch has not been idle. The latest progress is as follows: the latest changes to the project are now ready to be examined.\n\nA worthy undertaking is built through many careful efforts. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-043",
+      "body": "I have received the newest account from the RJS team: the latest changes to the project are now ready to be examined.\n\nI offer my respect to the hands still shaping this project. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-044",
+      "body": "The next report from our ongoing undertaking is ready: the latest changes to the project are now ready to be examined.\n\nThe road remains before us, and your support helps us travel it. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-045",
+      "body": "Those following the campaign deserve to know where the work now stands: the latest changes to the project are now ready to be examined.\n\nThank you for remaining with the Revenant Job System as it develops. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-046",
+      "body": "The hands at the forge have sent word of their latest efforts: the latest changes to the project are now ready to be examined.\n\nYour attention is valued, even while the larger task remains underway. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-047",
+      "body": "We have not yet reached the end of our task, but I can report: the latest changes to the project are now ready to be examined.\n\nThe work is not finished, but every sound step deserves notice. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-048",
+      "body": "Let this message serve as the latest field report from our project: the latest changes to the project are now ready to be examined.\n\nThose who have waited patiently deserve to know what has changed. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-049",
+      "body": "I bring a fresh report from the RJS workbench: another stage of development has been recorded and shared.\n\nThose still at their posts have my respect, as do those awaiting our reports. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-050",
+      "body": "The latest dispatch concerns progress made since our previous account: another stage of development has been recorded and shared.\n\nEvery careful improvement brings the work closer to its intended standard. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-051",
+      "body": "Our companions remain at their posts, and their latest work shows: another stage of development has been recorded and shared.\n\nI thank every companion who continues to follow this work in progress. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-052",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: another stage of development has been recorded and shared.\n\nWe shall judge our progress by the care of the work, not by haste. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-053",
+      "body": "The project ledger has been amended with the following news: another stage of development has been recorded and shared.\n\nLet this report acknowledge the people whose effort keeps the project moving. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-054",
+      "body": "Word has reached the hall from those still working on the task: another stage of development has been recorded and shared.\n\nTo those who continue to keep watch, I offer my thanks. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-055",
+      "body": "The work continues, and I have a new account to place before you: another stage of development has been recorded and shared.\n\nI will not call the campaign complete while work remains to be done. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-056",
+      "body": "Allow me to report what has changed in the Revenant Job System: another stage of development has been recorded and shared.\n\nI recognize the patience of those who remain with us between releases. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-057",
+      "body": "Our latest round of work has produced news worth sharing: another stage of development has been recorded and shared.\n\nThe duty continues, and I am grateful to have you alongside us. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-058",
+      "body": "The watch has not been idle. The latest progress is as follows: another stage of development has been recorded and shared.\n\nA worthy undertaking is built through many careful efforts. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-059",
+      "body": "I have received the newest account from the RJS team: another stage of development has been recorded and shared.\n\nI offer my respect to the hands still shaping this project. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-060",
+      "body": "The next report from our ongoing undertaking is ready: another stage of development has been recorded and shared.\n\nThe road remains before us, and your support helps us travel it. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-061",
+      "body": "Those following the campaign deserve to know where the work now stands: another stage of development has been recorded and shared.\n\nThank you for remaining with the Revenant Job System as it develops. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-062",
+      "body": "The hands at the forge have sent word of their latest efforts: another stage of development has been recorded and shared.\n\nYour attention is valued, even while the larger task remains underway. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-063",
+      "body": "We have not yet reached the end of our task, but I can report: another stage of development has been recorded and shared.\n\nThe work is not finished, but every sound step deserves notice. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-064",
+      "body": "Let this message serve as the latest field report from our project: another stage of development has been recorded and shared.\n\nThose who have waited patiently deserve to know what has changed. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-065",
+      "body": "I bring a fresh report from the RJS workbench: the project has advanced beyond our previous report.\n\nThose still at their posts have my respect, as do those awaiting our reports. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-066",
+      "body": "The latest dispatch concerns progress made since our previous account: the project has advanced beyond our previous report.\n\nEvery careful improvement brings the work closer to its intended standard. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-067",
+      "body": "Our companions remain at their posts, and their latest work shows: the project has advanced beyond our previous report.\n\nI thank every companion who continues to follow this work in progress. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-068",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the project has advanced beyond our previous report.\n\nWe shall judge our progress by the care of the work, not by haste. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-069",
+      "body": "The project ledger has been amended with the following news: the project has advanced beyond our previous report.\n\nLet this report acknowledge the people whose effort keeps the project moving. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-070",
+      "body": "Word has reached the hall from those still working on the task: the project has advanced beyond our previous report.\n\nTo those who continue to keep watch, I offer my thanks. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-071",
+      "body": "The work continues, and I have a new account to place before you: the project has advanced beyond our previous report.\n\nI will not call the campaign complete while work remains to be done. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-072",
+      "body": "Allow me to report what has changed in the Revenant Job System: the project has advanced beyond our previous report.\n\nI recognize the patience of those who remain with us between releases. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-073",
+      "body": "Our latest round of work has produced news worth sharing: the project has advanced beyond our previous report.\n\nThe duty continues, and I am grateful to have you alongside us. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-074",
+      "body": "The watch has not been idle. The latest progress is as follows: the project has advanced beyond our previous report.\n\nA worthy undertaking is built through many careful efforts. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-075",
+      "body": "I have received the newest account from the RJS team: the project has advanced beyond our previous report.\n\nI offer my respect to the hands still shaping this project. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-076",
+      "body": "The next report from our ongoing undertaking is ready: the project has advanced beyond our previous report.\n\nThe road remains before us, and your support helps us travel it. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-077",
+      "body": "Those following the campaign deserve to know where the work now stands: the project has advanced beyond our previous report.\n\nThank you for remaining with the Revenant Job System as it develops. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-078",
+      "body": "The hands at the forge have sent word of their latest efforts: the project has advanced beyond our previous report.\n\nYour attention is valued, even while the larger task remains underway. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-079",
+      "body": "We have not yet reached the end of our task, but I can report: the project has advanced beyond our previous report.\n\nThe work is not finished, but every sound step deserves notice. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-080",
+      "body": "Let this message serve as the latest field report from our project: the project has advanced beyond our previous report.\n\nThose who have waited patiently deserve to know what has changed. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-081",
+      "body": "I bring a fresh report from the RJS workbench: a new set of adjustments has been added to the current work.\n\nThose still at their posts have my respect, as do those awaiting our reports. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-082",
+      "body": "The latest dispatch concerns progress made since our previous account: a new set of adjustments has been added to the current work.\n\nEvery careful improvement brings the work closer to its intended standard. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-083",
+      "body": "Our companions remain at their posts, and their latest work shows: a new set of adjustments has been added to the current work.\n\nI thank every companion who continues to follow this work in progress. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-084",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: a new set of adjustments has been added to the current work.\n\nWe shall judge our progress by the care of the work, not by haste. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-085",
+      "body": "The project ledger has been amended with the following news: a new set of adjustments has been added to the current work.\n\nLet this report acknowledge the people whose effort keeps the project moving. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-086",
+      "body": "Word has reached the hall from those still working on the task: a new set of adjustments has been added to the current work.\n\nTo those who continue to keep watch, I offer my thanks. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-087",
+      "body": "The work continues, and I have a new account to place before you: a new set of adjustments has been added to the current work.\n\nI will not call the campaign complete while work remains to be done. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-088",
+      "body": "Allow me to report what has changed in the Revenant Job System: a new set of adjustments has been added to the current work.\n\nI recognize the patience of those who remain with us between releases. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-089",
+      "body": "Our latest round of work has produced news worth sharing: a new set of adjustments has been added to the current work.\n\nThe duty continues, and I am grateful to have you alongside us. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-090",
+      "body": "The watch has not been idle. The latest progress is as follows: a new set of adjustments has been added to the current work.\n\nA worthy undertaking is built through many careful efforts. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-091",
+      "body": "I have received the newest account from the RJS team: a new set of adjustments has been added to the current work.\n\nI offer my respect to the hands still shaping this project. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-092",
+      "body": "The next report from our ongoing undertaking is ready: a new set of adjustments has been added to the current work.\n\nThe road remains before us, and your support helps us travel it. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-093",
+      "body": "Those following the campaign deserve to know where the work now stands: a new set of adjustments has been added to the current work.\n\nThank you for remaining with the Revenant Job System as it develops. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-094",
+      "body": "The hands at the forge have sent word of their latest efforts: a new set of adjustments has been added to the current work.\n\nYour attention is valued, even while the larger task remains underway. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-095",
+      "body": "We have not yet reached the end of our task, but I can report: a new set of adjustments has been added to the current work.\n\nThe work is not finished, but every sound step deserves notice. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-096",
+      "body": "Let this message serve as the latest field report from our project: a new set of adjustments has been added to the current work.\n\nThose who have waited patiently deserve to know what has changed. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-097",
+      "body": "I bring a fresh report from the RJS workbench: the latest progress is now available to those following the project.\n\nThose still at their posts have my respect, as do those awaiting our reports. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-098",
+      "body": "The latest dispatch concerns progress made since our previous account: the latest progress is now available to those following the project.\n\nEvery careful improvement brings the work closer to its intended standard. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-099",
+      "body": "Our companions remain at their posts, and their latest work shows: the latest progress is now available to those following the project.\n\nI thank every companion who continues to follow this work in progress. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-100",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the latest progress is now available to those following the project.\n\nWe shall judge our progress by the care of the work, not by haste. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-101",
+      "body": "The project ledger has been amended with the following news: the latest progress is now available to those following the project.\n\nLet this report acknowledge the people whose effort keeps the project moving. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-102",
+      "body": "Word has reached the hall from those still working on the task: the latest progress is now available to those following the project.\n\nTo those who continue to keep watch, I offer my thanks. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-103",
+      "body": "The work continues, and I have a new account to place before you: the latest progress is now available to those following the project.\n\nI will not call the campaign complete while work remains to be done. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-104",
+      "body": "Allow me to report what has changed in the Revenant Job System: the latest progress is now available to those following the project.\n\nI recognize the patience of those who remain with us between releases. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-105",
+      "body": "Our latest round of work has produced news worth sharing: the latest progress is now available to those following the project.\n\nThe duty continues, and I am grateful to have you alongside us. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-106",
+      "body": "The watch has not been idle. The latest progress is as follows: the latest progress is now available to those following the project.\n\nA worthy undertaking is built through many careful efforts. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-107",
+      "body": "I have received the newest account from the RJS team: the latest progress is now available to those following the project.\n\nI offer my respect to the hands still shaping this project. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-108",
+      "body": "The next report from our ongoing undertaking is ready: the latest progress is now available to those following the project.\n\nThe road remains before us, and your support helps us travel it. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-109",
+      "body": "Those following the campaign deserve to know where the work now stands: the latest progress is now available to those following the project.\n\nThank you for remaining with the Revenant Job System as it develops. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-110",
+      "body": "The hands at the forge have sent word of their latest efforts: the latest progress is now available to those following the project.\n\nYour attention is valued, even while the larger task remains underway. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-111",
+      "body": "We have not yet reached the end of our task, but I can report: the latest progress is now available to those following the project.\n\nThe work is not finished, but every sound step deserves notice. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-112",
+      "body": "Let this message serve as the latest field report from our project: the latest progress is now available to those following the project.\n\nThose who have waited patiently deserve to know what has changed. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-113",
+      "body": "I bring a fresh report from the RJS workbench: our work has moved forward, and the new update is ready.\n\nThose still at their posts have my respect, as do those awaiting our reports. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-114",
+      "body": "The latest dispatch concerns progress made since our previous account: our work has moved forward, and the new update is ready.\n\nEvery careful improvement brings the work closer to its intended standard. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-115",
+      "body": "Our companions remain at their posts, and their latest work shows: our work has moved forward, and the new update is ready.\n\nI thank every companion who continues to follow this work in progress. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-116",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: our work has moved forward, and the new update is ready.\n\nWe shall judge our progress by the care of the work, not by haste. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-117",
+      "body": "The project ledger has been amended with the following news: our work has moved forward, and the new update is ready.\n\nLet this report acknowledge the people whose effort keeps the project moving. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-118",
+      "body": "Word has reached the hall from those still working on the task: our work has moved forward, and the new update is ready.\n\nTo those who continue to keep watch, I offer my thanks. May these changes serve the work well. The accompanying notes will guide your review."
+    },
+    {
+      "id": "update-119",
+      "body": "The work continues, and I have a new account to place before you: our work has moved forward, and the new update is ready.\n\nI will not call the campaign complete while work remains to be done. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-120",
+      "body": "Allow me to report what has changed in the Revenant Job System: our work has moved forward, and the new update is ready.\n\nI recognize the patience of those who remain with us between releases. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-121",
+      "body": "Our latest round of work has produced news worth sharing: our work has moved forward, and the new update is ready.\n\nThe duty continues, and I am grateful to have you alongside us. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-122",
+      "body": "The watch has not been idle. The latest progress is as follows: our work has moved forward, and the new update is ready.\n\nA worthy undertaking is built through many careful efforts. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-123",
+      "body": "I have received the newest account from the RJS team: our work has moved forward, and the new update is ready.\n\nI offer my respect to the hands still shaping this project. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-124",
+      "body": "The next report from our ongoing undertaking is ready: our work has moved forward, and the new update is ready.\n\nThe road remains before us, and your support helps us travel it. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-125",
+      "body": "Those following the campaign deserve to know where the work now stands: our work has moved forward, and the new update is ready.\n\nThank you for remaining with the Revenant Job System as it develops. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-126",
+      "body": "The hands at the forge have sent word of their latest efforts: our work has moved forward, and the new update is ready.\n\nYour attention is valued, even while the larger task remains underway. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-127",
+      "body": "We have not yet reached the end of our task, but I can report: our work has moved forward, and the new update is ready.\n\nThe work is not finished, but every sound step deserves notice. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-128",
+      "body": "Let this message serve as the latest field report from our project: our work has moved forward, and the new update is ready.\n\nThose who have waited patiently deserve to know what has changed. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-129",
+      "body": "I bring a fresh report from the RJS workbench: the most recent refinements have been gathered into an update.\n\nThose still at their posts have my respect, as do those awaiting our reports. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-130",
+      "body": "The latest dispatch concerns progress made since our previous account: the most recent refinements have been gathered into an update.\n\nEvery careful improvement brings the work closer to its intended standard. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-131",
+      "body": "Our companions remain at their posts, and their latest work shows: the most recent refinements have been gathered into an update.\n\nI thank every companion who continues to follow this work in progress. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-132",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the most recent refinements have been gathered into an update.\n\nWe shall judge our progress by the care of the work, not by haste. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-133",
+      "body": "The project ledger has been amended with the following news: the most recent refinements have been gathered into an update.\n\nLet this report acknowledge the people whose effort keeps the project moving. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-134",
+      "body": "Word has reached the hall from those still working on the task: the most recent refinements have been gathered into an update.\n\nTo those who continue to keep watch, I offer my thanks. Review the update notes to see what has changed, and use the project page as your point of reference."
+    },
+    {
+      "id": "update-135",
+      "body": "The work continues, and I have a new account to place before you: the most recent refinements have been gathered into an update.\n\nI will not call the campaign complete while work remains to be done. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-136",
+      "body": "Allow me to report what has changed in the Revenant Job System: the most recent refinements have been gathered into an update.\n\nI recognize the patience of those who remain with us between releases. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-137",
+      "body": "Our latest round of work has produced news worth sharing: the most recent refinements have been gathered into an update.\n\nThe duty continues, and I am grateful to have you alongside us. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-138",
+      "body": "The watch has not been idle. The latest progress is as follows: the most recent refinements have been gathered into an update.\n\nA worthy undertaking is built through many careful efforts. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-139",
+      "body": "I have received the newest account from the RJS team: the most recent refinements have been gathered into an update.\n\nI offer my respect to the hands still shaping this project. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-140",
+      "body": "The next report from our ongoing undertaking is ready: the most recent refinements have been gathered into an update.\n\nThe road remains before us, and your support helps us travel it. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-141",
+      "body": "Those following the campaign deserve to know where the work now stands: the most recent refinements have been gathered into an update.\n\nThank you for remaining with the Revenant Job System as it develops. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-142",
+      "body": "The hands at the forge have sent word of their latest efforts: the most recent refinements have been gathered into an update.\n\nYour attention is valued, even while the larger task remains underway. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-143",
+      "body": "We have not yet reached the end of our task, but I can report: the most recent refinements have been gathered into an update.\n\nThe work is not finished, but every sound step deserves notice. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-144",
+      "body": "Let this message serve as the latest field report from our project: the most recent refinements have been gathered into an update.\n\nThose who have waited patiently deserve to know what has changed. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-145",
+      "body": "I bring a fresh report from the RJS workbench: the project record now includes another set of completed changes.\n\nThose still at their posts have my respect, as do those awaiting our reports. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-146",
+      "body": "The latest dispatch concerns progress made since our previous account: the project record now includes another set of completed changes.\n\nEvery careful improvement brings the work closer to its intended standard. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-147",
+      "body": "Our companions remain at their posts, and their latest work shows: the project record now includes another set of completed changes.\n\nI thank every companion who continues to follow this work in progress. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-148",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the project record now includes another set of completed changes.\n\nWe shall judge our progress by the care of the work, not by haste. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-149",
+      "body": "The project ledger has been amended with the following news: the project record now includes another set of completed changes.\n\nLet this report acknowledge the people whose effort keeps the project moving. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-150",
+      "body": "Word has reached the hall from those still working on the task: the project record now includes another set of completed changes.\n\nTo those who continue to keep watch, I offer my thanks. The next stage will be approached with the same patience and discipline."
+    },
+    {
+      "id": "update-151",
+      "body": "The work continues, and I have a new account to place before you: the project record now includes another set of completed changes.\n\nI will not call the campaign complete while work remains to be done. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-152",
+      "body": "Allow me to report what has changed in the Revenant Job System: the project record now includes another set of completed changes.\n\nI recognize the patience of those who remain with us between releases. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-153",
+      "body": "Our latest round of work has produced news worth sharing: the project record now includes another set of completed changes.\n\nThe duty continues, and I am grateful to have you alongside us. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-154",
+      "body": "The watch has not been idle. The latest progress is as follows: the project record now includes another set of completed changes.\n\nA worthy undertaking is built through many careful efforts. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-155",
+      "body": "I have received the newest account from the RJS team: the project record now includes another set of completed changes.\n\nI offer my respect to the hands still shaping this project. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-156",
+      "body": "The next report from our ongoing undertaking is ready: the project record now includes another set of completed changes.\n\nThe road remains before us, and your support helps us travel it. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-157",
+      "body": "Those following the campaign deserve to know where the work now stands: the project record now includes another set of completed changes.\n\nThank you for remaining with the Revenant Job System as it develops. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-158",
+      "body": "The hands at the forge have sent word of their latest efforts: the project record now includes another set of completed changes.\n\nYour attention is valued, even while the larger task remains underway. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-159",
+      "body": "We have not yet reached the end of our task, but I can report: the project record now includes another set of completed changes.\n\nThe work is not finished, but every sound step deserves notice. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-160",
+      "body": "Let this message serve as the latest field report from our project: the project record now includes another set of completed changes.\n\nThose who have waited patiently deserve to know what has changed. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-161",
+      "body": "I bring a fresh report from the RJS workbench: the latest RJS update has been published for the community.\n\nThose still at their posts have my respect, as do those awaiting our reports. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-162",
+      "body": "The latest dispatch concerns progress made since our previous account: the latest RJS update has been published for the community.\n\nEvery careful improvement brings the work closer to its intended standard. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-163",
+      "body": "Our companions remain at their posts, and their latest work shows: the latest RJS update has been published for the community.\n\nI thank every companion who continues to follow this work in progress. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-164",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the latest RJS update has been published for the community.\n\nWe shall judge our progress by the care of the work, not by haste. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-165",
+      "body": "The project ledger has been amended with the following news: the latest RJS update has been published for the community.\n\nLet this report acknowledge the people whose effort keeps the project moving. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-166",
+      "body": "Word has reached the hall from those still working on the task: the latest RJS update has been published for the community.\n\nTo those who continue to keep watch, I offer my thanks. Take the time to read the changes, for even a small adjustment may matter in the field."
+    },
+    {
+      "id": "update-167",
+      "body": "The work continues, and I have a new account to place before you: the latest RJS update has been published for the community.\n\nI will not call the campaign complete while work remains to be done. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-168",
+      "body": "Allow me to report what has changed in the Revenant Job System: the latest RJS update has been published for the community.\n\nI recognize the patience of those who remain with us between releases. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-169",
+      "body": "Our latest round of work has produced news worth sharing: the latest RJS update has been published for the community.\n\nThe duty continues, and I am grateful to have you alongside us. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-170",
+      "body": "The watch has not been idle. The latest progress is as follows: the latest RJS update has been published for the community.\n\nA worthy undertaking is built through many careful efforts. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-171",
+      "body": "I have received the newest account from the RJS team: the latest RJS update has been published for the community.\n\nI offer my respect to the hands still shaping this project. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-172",
+      "body": "The next report from our ongoing undertaking is ready: the latest RJS update has been published for the community.\n\nThe road remains before us, and your support helps us travel it. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-173",
+      "body": "Those following the campaign deserve to know where the work now stands: the latest RJS update has been published for the community.\n\nThank you for remaining with the Revenant Job System as it develops. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-174",
+      "body": "The hands at the forge have sent word of their latest efforts: the latest RJS update has been published for the community.\n\nYour attention is valued, even while the larger task remains underway. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-175",
+      "body": "We have not yet reached the end of our task, but I can report: the latest RJS update has been published for the community.\n\nThe work is not finished, but every sound step deserves notice. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-176",
+      "body": "Let this message serve as the latest field report from our project: the latest RJS update has been published for the community.\n\nThose who have waited patiently deserve to know what has changed. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-177",
+      "body": "I bring a fresh report from the RJS workbench: another portion of the undertaking has been brought to completion.\n\nThose still at their posts have my respect, as do those awaiting our reports. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-178",
+      "body": "The latest dispatch concerns progress made since our previous account: another portion of the undertaking has been brought to completion.\n\nEvery careful improvement brings the work closer to its intended standard. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-179",
+      "body": "Our companions remain at their posts, and their latest work shows: another portion of the undertaking has been brought to completion.\n\nI thank every companion who continues to follow this work in progress. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-180",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: another portion of the undertaking has been brought to completion.\n\nWe shall judge our progress by the care of the work, not by haste. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-181",
+      "body": "The project ledger has been amended with the following news: another portion of the undertaking has been brought to completion.\n\nLet this report acknowledge the people whose effort keeps the project moving. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-182",
+      "body": "Word has reached the hall from those still working on the task: another portion of the undertaking has been brought to completion.\n\nTo those who continue to keep watch, I offer my thanks. We shall return with another report when there is further progress to share."
+    },
+    {
+      "id": "update-183",
+      "body": "The work continues, and I have a new account to place before you: another portion of the undertaking has been brought to completion.\n\nI will not call the campaign complete while work remains to be done. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-184",
+      "body": "Allow me to report what has changed in the Revenant Job System: another portion of the undertaking has been brought to completion.\n\nI recognize the patience of those who remain with us between releases. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-185",
+      "body": "Our latest round of work has produced news worth sharing: another portion of the undertaking has been brought to completion.\n\nThe duty continues, and I am grateful to have you alongside us. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-186",
+      "body": "The watch has not been idle. The latest progress is as follows: another portion of the undertaking has been brought to completion.\n\nA worthy undertaking is built through many careful efforts. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-187",
+      "body": "I have received the newest account from the RJS team: another portion of the undertaking has been brought to completion.\n\nI offer my respect to the hands still shaping this project. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-188",
+      "body": "The next report from our ongoing undertaking is ready: another portion of the undertaking has been brought to completion.\n\nThe road remains before us, and your support helps us travel it. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-189",
+      "body": "Those following the campaign deserve to know where the work now stands: another portion of the undertaking has been brought to completion.\n\nThank you for remaining with the Revenant Job System as it develops. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-190",
+      "body": "The hands at the forge have sent word of their latest efforts: another portion of the undertaking has been brought to completion.\n\nYour attention is valued, even while the larger task remains underway. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-191",
+      "body": "We have not yet reached the end of our task, but I can report: another portion of the undertaking has been brought to completion.\n\nThe work is not finished, but every sound step deserves notice. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-192",
+      "body": "Let this message serve as the latest field report from our project: another portion of the undertaking has been brought to completion.\n\nThose who have waited patiently deserve to know what has changed. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-193",
+      "body": "I bring a fresh report from the RJS workbench: new developments have been entered into the public project record.\n\nThose still at their posts have my respect, as do those awaiting our reports. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-194",
+      "body": "The latest dispatch concerns progress made since our previous account: new developments have been entered into the public project record.\n\nEvery careful improvement brings the work closer to its intended standard. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-195",
+      "body": "Our companions remain at their posts, and their latest work shows: new developments have been entered into the public project record.\n\nI thank every companion who continues to follow this work in progress. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-196",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: new developments have been entered into the public project record.\n\nWe shall judge our progress by the care of the work, not by haste. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-197",
+      "body": "The project ledger has been amended with the following news: new developments have been entered into the public project record.\n\nLet this report acknowledge the people whose effort keeps the project moving. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-198",
+      "body": "Word has reached the hall from those still working on the task: new developments have been entered into the public project record.\n\nTo those who continue to keep watch, I offer my thanks. Keep the previous report in mind and compare it with the progress recorded here."
+    },
+    {
+      "id": "update-199",
+      "body": "The work continues, and I have a new account to place before you: new developments have been entered into the public project record.\n\nI will not call the campaign complete while work remains to be done. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-200",
+      "body": "Allow me to report what has changed in the Revenant Job System: new developments have been entered into the public project record.\n\nI recognize the patience of those who remain with us between releases. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-201",
+      "body": "Our latest round of work has produced news worth sharing: new developments have been entered into the public project record.\n\nThe duty continues, and I am grateful to have you alongside us. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-202",
+      "body": "The watch has not been idle. The latest progress is as follows: new developments have been entered into the public project record.\n\nA worthy undertaking is built through many careful efforts. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-203",
+      "body": "I have received the newest account from the RJS team: new developments have been entered into the public project record.\n\nI offer my respect to the hands still shaping this project. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-204",
+      "body": "The next report from our ongoing undertaking is ready: new developments have been entered into the public project record.\n\nThe road remains before us, and your support helps us travel it. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-205",
+      "body": "Those following the campaign deserve to know where the work now stands: new developments have been entered into the public project record.\n\nThank you for remaining with the Revenant Job System as it develops. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-206",
+      "body": "The hands at the forge have sent word of their latest efforts: new developments have been entered into the public project record.\n\nYour attention is valued, even while the larger task remains underway. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-207",
+      "body": "We have not yet reached the end of our task, but I can report: new developments have been entered into the public project record.\n\nThe work is not finished, but every sound step deserves notice. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-208",
+      "body": "Let this message serve as the latest field report from our project: new developments have been entered into the public project record.\n\nThose who have waited patiently deserve to know what has changed. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-209",
+      "body": "I bring a fresh report from the RJS workbench: the latest round of work has reached a point worth reporting.\n\nThose still at their posts have my respect, as do those awaiting our reports. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-210",
+      "body": "The latest dispatch concerns progress made since our previous account: the latest round of work has reached a point worth reporting.\n\nEvery careful improvement brings the work closer to its intended standard. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-211",
+      "body": "Our companions remain at their posts, and their latest work shows: the latest round of work has reached a point worth reporting.\n\nI thank every companion who continues to follow this work in progress. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-212",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the latest round of work has reached a point worth reporting.\n\nWe shall judge our progress by the care of the work, not by haste. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-213",
+      "body": "The project ledger has been amended with the following news: the latest round of work has reached a point worth reporting.\n\nLet this report acknowledge the people whose effort keeps the project moving. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-214",
+      "body": "Word has reached the hall from those still working on the task: the latest round of work has reached a point worth reporting.\n\nTo those who continue to keep watch, I offer my thanks. The information accompanying this update sets out the work completed so far."
+    },
+    {
+      "id": "update-215",
+      "body": "The work continues, and I have a new account to place before you: the latest round of work has reached a point worth reporting.\n\nI will not call the campaign complete while work remains to be done. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-216",
+      "body": "Allow me to report what has changed in the Revenant Job System: the latest round of work has reached a point worth reporting.\n\nI recognize the patience of those who remain with us between releases. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-217",
+      "body": "Our latest round of work has produced news worth sharing: the latest round of work has reached a point worth reporting.\n\nThe duty continues, and I am grateful to have you alongside us. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-218",
+      "body": "The watch has not been idle. The latest progress is as follows: the latest round of work has reached a point worth reporting.\n\nA worthy undertaking is built through many careful efforts. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-219",
+      "body": "I have received the newest account from the RJS team: the latest round of work has reached a point worth reporting.\n\nI offer my respect to the hands still shaping this project. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-220",
+      "body": "The next report from our ongoing undertaking is ready: the latest round of work has reached a point worth reporting.\n\nThe road remains before us, and your support helps us travel it. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-221",
+      "body": "Those following the campaign deserve to know where the work now stands: the latest round of work has reached a point worth reporting.\n\nThank you for remaining with the Revenant Job System as it develops. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-222",
+      "body": "The hands at the forge have sent word of their latest efforts: the latest round of work has reached a point worth reporting.\n\nYour attention is valued, even while the larger task remains underway. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-223",
+      "body": "We have not yet reached the end of our task, but I can report: the latest round of work has reached a point worth reporting.\n\nThe work is not finished, but every sound step deserves notice. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-224",
+      "body": "Let this message serve as the latest field report from our project: the latest round of work has reached a point worth reporting.\n\nThose who have waited patiently deserve to know what has changed. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-225",
+      "body": "I bring a fresh report from the RJS workbench: the current project build has received further improvements.\n\nThose still at their posts have my respect, as do those awaiting our reports. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-226",
+      "body": "The latest dispatch concerns progress made since our previous account: the current project build has received further improvements.\n\nEvery careful improvement brings the work closer to its intended standard. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-227",
+      "body": "Our companions remain at their posts, and their latest work shows: the current project build has received further improvements.\n\nI thank every companion who continues to follow this work in progress. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-228",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: the current project build has received further improvements.\n\nWe shall judge our progress by the care of the work, not by haste. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-229",
+      "body": "The project ledger has been amended with the following news: the current project build has received further improvements.\n\nLet this report acknowledge the people whose effort keeps the project moving. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-230",
+      "body": "Word has reached the hall from those still working on the task: the current project build has received further improvements.\n\nTo those who continue to keep watch, I offer my thanks. The project page holds the details of this progress and the files currently available."
+    },
+    {
+      "id": "update-231",
+      "body": "The work continues, and I have a new account to place before you: the current project build has received further improvements.\n\nI will not call the campaign complete while work remains to be done. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-232",
+      "body": "Allow me to report what has changed in the Revenant Job System: the current project build has received further improvements.\n\nI recognize the patience of those who remain with us between releases. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-233",
+      "body": "Our latest round of work has produced news worth sharing: the current project build has received further improvements.\n\nThe duty continues, and I am grateful to have you alongside us. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-234",
+      "body": "The watch has not been idle. The latest progress is as follows: the current project build has received further improvements.\n\nA worthy undertaking is built through many careful efforts. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-235",
+      "body": "I have received the newest account from the RJS team: the current project build has received further improvements.\n\nI offer my respect to the hands still shaping this project. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-236",
+      "body": "The next report from our ongoing undertaking is ready: the current project build has received further improvements.\n\nThe road remains before us, and your support helps us travel it. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-237",
+      "body": "Those following the campaign deserve to know where the work now stands: the current project build has received further improvements.\n\nThank you for remaining with the Revenant Job System as it develops. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-238",
+      "body": "The hands at the forge have sent word of their latest efforts: the current project build has received further improvements.\n\nYour attention is valued, even while the larger task remains underway. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-239",
+      "body": "We have not yet reached the end of our task, but I can report: the current project build has received further improvements.\n\nThe work is not finished, but every sound step deserves notice. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-240",
+      "body": "Let this message serve as the latest field report from our project: the current project build has received further improvements.\n\nThose who have waited patiently deserve to know what has changed. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-241",
+      "body": "I bring a fresh report from the RJS workbench: we have made another measured advance in the Revenant Job System.\n\nThose still at their posts have my respect, as do those awaiting our reports. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-242",
+      "body": "The latest dispatch concerns progress made since our previous account: we have made another measured advance in the Revenant Job System.\n\nEvery careful improvement brings the work closer to its intended standard. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-243",
+      "body": "Our companions remain at their posts, and their latest work shows: we have made another measured advance in the Revenant Job System.\n\nI thank every companion who continues to follow this work in progress. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-244",
+      "body": "A captain is only as useful as the reports he brings back. Here is the latest: we have made another measured advance in the Revenant Job System.\n\nWe shall judge our progress by the care of the work, not by haste. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-245",
+      "body": "The project ledger has been amended with the following news: we have made another measured advance in the Revenant Job System.\n\nLet this report acknowledge the people whose effort keeps the project moving. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-246",
+      "body": "Word has reached the hall from those still working on the task: we have made another measured advance in the Revenant Job System.\n\nTo those who continue to keep watch, I offer my thanks. We will keep our purpose in sight while the remaining work is carried out."
+    },
+    {
+      "id": "update-247",
+      "body": "The work continues, and I have a new account to place before you: we have made another measured advance in the Revenant Job System.\n\nI will not call the campaign complete while work remains to be done. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-248",
+      "body": "Allow me to report what has changed in the Revenant Job System: we have made another measured advance in the Revenant Job System.\n\nI recognize the patience of those who remain with us between releases. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-249",
+      "body": "Our latest round of work has produced news worth sharing: we have made another measured advance in the Revenant Job System.\n\nThe duty continues, and I am grateful to have you alongside us. Let us continue with care; the assignment is not yet complete."
+    },
+    {
+      "id": "update-250",
+      "body": "The watch has not been idle. The latest progress is as follows: we have made another measured advance in the Revenant Job System.\n\nA worthy undertaking is built through many careful efforts. The details are recorded below; examine them before proceeding with the current build."
+    },
+    {
+      "id": "update-251",
+      "body": "I have received the newest account from the RJS team: we have made another measured advance in the Revenant Job System.\n\nI offer my respect to the hands still shaping this project. Consult the information accompanying this update; it is the clearest account of our work."
+    },
+    {
+      "id": "update-252",
+      "body": "The next report from our ongoing undertaking is ready: we have made another measured advance in the Revenant Job System.\n\nThe road remains before us, and your support helps us travel it. Your observations remain welcome as the work proceeds."
+    },
+    {
+      "id": "update-253",
+      "body": "Those following the campaign deserve to know where the work now stands: we have made another measured advance in the Revenant Job System.\n\nThank you for remaining with the Revenant Job System as it develops. Examine the current changes, and remain attentive to the road ahead."
+    },
+    {
+      "id": "update-254",
+      "body": "The hands at the forge have sent word of their latest efforts: we have made another measured advance in the Revenant Job System.\n\nYour attention is valued, even while the larger task remains underway. The latest account is available on the project page for your inspection."
+    },
+    {
+      "id": "update-255",
+      "body": "We have not yet reached the end of our task, but I can report: we have made another measured advance in the Revenant Job System.\n\nThe work is not finished, but every sound step deserves notice. Read the record carefully, and carry forward only what is confirmed."
+    },
+    {
+      "id": "update-256",
+      "body": "Let this message serve as the latest field report from our project: we have made another measured advance in the Revenant Job System.\n\nThose who have waited patiently deserve to know what has changed. Let us continue with care; the assignment is not yet complete."
+    }
+  ]
+}
