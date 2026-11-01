@@ -11,7 +11,7 @@ jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
-      - name: Announce RJS release or test Discord delivery
+      - name: Announce RJS release or run Basch announcement tests
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
@@ -19,50 +19,86 @@ jobs:
           RELEASE_URL: ${{ github.event.release.html_url }}
           RELEASE_BODY: ${{ github.event.release.body }}
         run: |
+          set -e
+
           if [ -z "$DISCORD_WEBHOOK_URL" ]; then
             echo "Discord webhook secret is missing."
             exit 1
           fi
 
+          send_discord_message() {
+            local content="$1"
+            local title="$2"
+            local url="$3"
+            local description="$4"
+            local allow_everyone="$5"
+            local mention_rules='[]'
+
+            if [ "$allow_everyone" = "true" ]; then
+              mention_rules='["everyone"]'
+            fi
+
+            local payload
+            payload=$(jq -n \
+              --arg content "$content" \
+              --arg title "$title" \
+              --arg url "$url" \
+              --arg description "$description" \
+              --argjson mentions "$mention_rules" \
+              '{
+                content: $content,
+                allowed_mentions: { parse: $mentions },
+                embeds: [{
+                  title: $title,
+                  url: $url,
+                  description: ($description | .[0:3900])
+                }]
+              }')
+
+            curl -fsS \
+              -H "Content-Type: application/json" \
+              -d "$payload" \
+              "$DISCORD_WEBHOOK_URL" \
+              -o /dev/null
+          }
+
+          OPENINGS=(
+            "I bring word of a new milestone in the Revenant Job System's development."
+            "Our work advances. A new release of the Revenant Job System is now available."
+            "The latest stage of our efforts has been completed. The new release is ready."
+            "I am pleased to report that a new RJS release has been published."
+            "There is progress to report: the Revenant Job System has received a new release."
+            "The path forward is clear. A new RJS release is now available."
+            "Those who have followed our progress will find a new release awaiting them."
+            "Another milestone has been reached. The latest version is ready for review."
+            "I have come to share news of our latest work: a new release is available."
+            "The project moves forward with another release. Its details follow."
+            "Our efforts have yielded another result. The new version is now published."
+            "Let it be known: a new release of the Revenant Job System is available."
+            "We have made further progress. The latest RJS release can now be examined."
+            "The latest work has been made available to all who follow this project."
+            "I report that the project has advanced once more. A new version awaits."
+            "A new release has been published. The changes are recorded below."
+            "The development continues with purpose. The latest release is now available."
+            "I have news worth sharing: the Revenant Job System has taken another step forward."
+          )
+
+          CLOSINGS=(
+            "Review the release notes before proceeding; every change has its purpose."
+            "Thank you to all who continue to follow and support this work."
+            "Your continued support is valued. We shall press on."
+            "May this release bring us one step closer to our goal."
+            "The work continues, and I remain committed to seeing it through."
+            "Please consult the details above for the full account of this release."
+            "Let us carry this progress forward."
+            "Until our next report, remain steadfast."
+            "I am grateful to everyone helping this project move forward."
+            "More work lies ahead. For now, this milestone is yours to explore."
+            "Stay attentive; further developments will be shared here."
+            "Let our next steps be as deliberate as the last."
+          )
+
           if [ "$EVENT_NAME" = "release" ]; then
-            # Basch's voice: composed, honorable, and direct.
-            # Each release receives a randomly selected opening and closing.
-            OPENINGS=(
-              "I bring word of a new milestone in the Revenant Job System's development."
-              "Our work advances. A new release of the Revenant Job System is now available."
-              "The latest stage of our efforts has been completed. The new release is ready."
-              "I am pleased to report that a new RJS release has been published."
-              "There is progress to report: the Revenant Job System has received a new release."
-              "The path forward is clear. A new RJS release is now available."
-              "Those who have followed our progress will find a new release awaiting them."
-              "Another milestone has been reached. The latest version is ready for review."
-              "I have come to share news of our latest work: a new release is available."
-              "The project moves forward with another release. Its details follow."
-              "Our efforts have yielded another result. The new version is now published."
-              "Let it be known: a new release of the Revenant Job System is available."
-              "We have made further progress. The latest RJS release can now be examined."
-              "The latest work has been made available to all who follow this project."
-              "I report that the project has advanced once more. A new version awaits."
-              "A new release has been published. The changes are recorded below."
-              "The development continues with purpose. The latest release is now available."
-              "I have news worth sharing: the Revenant Job System has taken another step forward."
-            )
-
-            CLOSINGS=(
-              "Review the release notes before proceeding; every change has its purpose."
-              "Thank you to all who continue to follow and support this work."
-              "Your continued support is valued. We shall press on."
-              "May this release bring us one step closer to our goal."
-              "The work continues, and I remain committed to seeing it through."
-              "Please consult the details above for the full account of this release."
-              "Let us carry this progress forward."
-              "Until our next report, remain steadfast."
-              "I am grateful to everyone helping this project move forward."
-              "More work lies ahead. For now, this milestone is yours to explore."
-              "Stay attentive; further developments will be shared here."
-              "Let our next steps be as deliberate as the last."
-            )
-
             OPENING="${OPENINGS[$((RANDOM % ${#OPENINGS[@]}))]}"
             CLOSING="${CLOSINGS[$((RANDOM % ${#CLOSINGS[@]}))]}"
 
@@ -75,31 +111,48 @@ jobs:
             else
               DESCRIPTION="$CLOSING"
             fi
-          else
-            CONTENT="🧪 RJS Discord integration test — no action needed."
-            TITLE="Discord webhook test successful"
-            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
-            DESCRIPTION="Automated test from GitHub Actions. This verifies the webhook connection and message formatting. No release announcement is being made."
+
+            send_discord_message "$CONTENT" "$TITLE" "$URL" "$DESCRIPTION" "true"
+            exit 0
           fi
 
-          PAYLOAD=$(jq -n \
-            --arg content "$CONTENT" \
-            --arg title "$TITLE" \
-            --arg url "$URL" \
-            --arg description "$DESCRIPTION" \
-            '{
-              content: $content,
-              allowed_mentions: {
-                parse: (if ($content | contains("@everyone")) then ["everyone"] else [] end)
-              },
-              embeds: [{
-                title: $title,
-                url: $url,
-                description: ($description | .[0:3900])
-              }]
-            }')
+          # Manual workflow_dispatch: a 12-message test batch based on RJS 3.4.4.
+          # The first six simulate release announcements (with @everyone).
+          # The last six simulate updates (without @everyone).
+          BASE_VERSION="3.4.4"
+          REPOSITORY_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System"
 
-          curl -fsS \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "$DISCORD_WEBHOOK_URL"
+          UPDATE_OPENINGS=(
+            "A further update has been made to the project. The current baseline remains version ${BASE_VERSION}."
+            "I have a progress report. Work on the Revenant Job System continues from version ${BASE_VERSION}."
+            "The project has received another adjustment. Please review the details of this update."
+            "Our work proceeds with care. This update builds upon the ${BASE_VERSION} release."
+            "There is a new development to report. The ${BASE_VERSION} baseline remains the point of reference."
+            "Allow me to report a further change to the project. The details are available below."
+          )
+
+          for i in 0 1 2 3 4 5; do
+            number=$((i + 1))
+            opening="${OPENINGS[$((i * 2))]}"
+            closing="${CLOSINGS[$((i * 2))]}"
+            content="@everyone"$'\n\n'"[FIRE TEST ${number}/6] ${opening}"
+            title="RJS ${BASE_VERSION} | Basch Release Test ${number}/6"
+            description="Simulation based on the current ${BASE_VERSION} baseline. This is a test announcement, not a new release."$'\n\n'"${closing}"
+
+            send_discord_message "$content" "$title" "$REPOSITORY_URL/releases" "$description" "true"
+            echo "Sent release-style fire test ${number}/6."
+            sleep 1
+          done
+
+          for i in 0 1 2 3 4 5; do
+            number=$((i + 1))
+            content="[UPDATE TEST ${number}/6] ${UPDATE_OPENINGS[$i]}"
+            title="RJS ${BASE_VERSION} | Basch Update Test ${number}/6"
+            description="Simulation based on the current ${BASE_VERSION} baseline. This is an update test only; no new release is being announced."
+
+            send_discord_message "$content" "$title" "$REPOSITORY_URL"
+            echo "Sent update test ${number}/6 (without @everyone)."
+            sleep 1
+          done
+
+          echo "Completed all 12 Basch announcement tests."
