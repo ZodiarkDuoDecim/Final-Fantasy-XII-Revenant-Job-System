@@ -4,12 +4,16 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/main.yml"
 
 permissions:
   contents: read
 
 jobs:
   announce:
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, 'Basch single update publish [one-time]')
     runs-on: ubuntu-latest
     steps:
       - name: Load Basch announcement library
@@ -18,7 +22,7 @@ jobs:
           ref: main
           persist-credentials: false
 
-      - name: Publish official RJS announcement or preview Basch messages
+      - name: Publish official RJS announcement or one update
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
@@ -104,42 +108,23 @@ jobs:
             CONTENT="@everyone"$'\n\n'"${ANNOUNCEMENT}"
             TITLE="Revenant Job System ${TAG_NAME}"
             send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" "true" ""
+            echo "Published official release announcement."
             exit 0
           fi
 
-          # Manual preview batch: six complete release announcements and six complete updates.
-          # All previews use the real v3.4.4 release details and have every mention disabled.
+          # A manual run or the one-time guarded push publishes exactly one Update.
+          INDEX=$((RANDOM % ${#UPDATE_MESSAGES[@]}))
+          ANNOUNCEMENT="$(decode_announcement "${UPDATE_MESSAGES[$INDEX]}")"
           BASE_TAG="v3.4.4"
-          BASE_TITLE="Revenant Job System ${BASE_TAG}"
           BASE_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
           DOWNLOAD_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/download/v3.4.4/Revenant.Job.System.3.4.4.7z"
           BASE_NOTES="- Fixed game not loading at some passages into Rabanastre
-          - Claws are now Styles and they have unique Elements and one unique into Time Style with Updated Icons
-          - Load Screen Remade with Golden Forged Lion
-          - Clan Menu Screen uses Beta Image
-          - Arrows, Bombs and even the Shots have Properly name, not just a Short thing to fix all
-          Note: the names of the Ammunation was not the error, the error was with a file inside the Map Files, leftover of some descarted devlopment."
+          - Claws are now Styles and have unique Elements, including a unique Time Style, with updated icons
+          - Remade the Load Screen with the Golden Forged Lion
+          - Updated the Clan Menu Screen with the Beta image
+          - Corrected the names of Arrows, Bombs, and Shots
+          
+          Note: The ammunition names were not the cause of the loading issue; it was a leftover file in Map Files from discarded development."
           BASE_DESCRIPTION="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
-
-          mapfile -t TEST_RELEASE_MESSAGES < <(printf '%s\n' "${RELEASE_MESSAGES[@]}" | shuf -n 6)
-          mapfile -t TEST_UPDATE_MESSAGES < <(printf '%s\n' "${UPDATE_MESSAGES[@]}" | shuf -n 6)
-
-          for i in 0 1 2 3 4 5; do
-            number=$((i + 1))
-            ANNOUNCEMENT="$(decode_announcement "${TEST_RELEASE_MESSAGES[$i]}")"
-            footer="Basch announcement preview • Release ${number}/6 • No ping"
-            send_discord_message "$ANNOUNCEMENT" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
-            echo "Sent complete release announcement ${number}/6 (no mentions)."
-            sleep 1
-          done
-
-          for i in 0 1 2 3 4 5; do
-            number=$((i + 1))
-            ANNOUNCEMENT="$(decode_announcement "${TEST_UPDATE_MESSAGES[$i]}")"
-            footer="Basch announcement preview • Update ${number}/6 • No ping"
-            send_discord_message "$ANNOUNCEMENT" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
-            echo "Sent complete update announcement ${number}/6 (no mentions)."
-            sleep 1
-          done
-
-          echo "Completed all 12 complete-announcement previews from the 512-entry Basch library; no mentions used."
+          send_discord_message "$ANNOUNCEMENT" "Revenant Job System Update • ${BASE_TAG}" "$BASE_URL" "$BASE_DESCRIPTION" "false" "Official Update • Basch"
+          echo "Published exactly one Update announcement; all mentions disabled."
