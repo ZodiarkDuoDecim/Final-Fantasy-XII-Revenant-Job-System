@@ -11,13 +11,14 @@ jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
-      - name: Announce RJS release or run Basch announcement tests
+      - name: Publish official RJS announcement or preview Basch phrasing
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
           TAG_NAME: ${{ github.event.release.tag_name }}
           RELEASE_URL: ${{ github.event.release.html_url }}
           RELEASE_BODY: ${{ github.event.release.body }}
+          ASSET_URL: ${{ github.event.release.assets[0].browser_download_url }}
         run: |
           set -e
 
@@ -32,6 +33,7 @@ jobs:
             local url="$3"
             local description="$4"
             local allow_everyone="$5"
+            local footer="$6"
             local mention_rules='[]'
 
             if [ "$allow_everyone" = "true" ]; then
@@ -44,6 +46,7 @@ jobs:
               --arg title "$title" \
               --arg url "$url" \
               --arg description "$description" \
+              --arg footer "$footer" \
               --argjson mentions "$mention_rules" \
               '{
                 content: $content,
@@ -51,7 +54,8 @@ jobs:
                 embeds: [{
                   title: $title,
                   url: $url,
-                  description: ($description | .[0:3900])
+                  description: ($description | .[0:3900]),
+                  footer: (if $footer == "" then null else { text: $footer } end)
                 }]
               }')
 
@@ -62,97 +66,75 @@ jobs:
               -o /dev/null
           }
 
-          OPENINGS=(
-            "I bring word of a new milestone in the Revenant Job System's development."
-            "Our work advances. A new release of the Revenant Job System is now available."
-            "The latest stage of our efforts has been completed. The new release is ready."
-            "I am pleased to report that a new RJS release has been published."
-            "There is progress to report: the Revenant Job System has received a new release."
-            "The path forward is clear. A new RJS release is now available."
-            "Those who have followed our progress will find a new release awaiting them."
-            "Another milestone has been reached. The latest version is ready for review."
-            "I have come to share news of our latest work: a new release is available."
-            "The project moves forward with another release. Its details follow."
-            "Our efforts have yielded another result. The new version is now published."
-            "Let it be known: a new release of the Revenant Job System is available."
-            "We have made further progress. The latest RJS release can now be examined."
-            "The latest work has been made available to all who follow this project."
-            "I report that the project has advanced once more. A new version awaits."
-            "A new release has been published. The changes are recorded below."
-            "The development continues with purpose. The latest release is now available."
-            "I have news worth sharing: the Revenant Job System has taken another step forward."
+          RELEASE_PHRASES=(
+            "🚀 The latest Revenant Job System release is here!"
+            "🚀 I am pleased to report that a new RJS release is now available."
+            "🚀 The work continues. The latest Revenant Job System release is ready."
+            "🚀 Another milestone has been reached. The latest RJS release is here."
+            "🚀 I bring good news: a new Revenant Job System release is now available."
+            "🚀 The latest work on the Revenant Job System is now available to all."
+            "🚀 The Revenant Job System advances with a new release."
+            "🚀 I have news for those following the project: the latest RJS release is available."
+            "🚀 Our latest work is ready. The new Revenant Job System release is now available."
+            "🚀 A new stage in the Revenant Job System's development is ready to explore."
+            "🚀 The newest RJS release has arrived. Its details are recorded below."
+            "🚀 I report that the latest Revenant Job System release is now published."
           )
 
-          CLOSINGS=(
-            "Review the release notes before proceeding; every change has its purpose."
-            "Thank you to all who continue to follow and support this work."
-            "Your continued support is valued. We shall press on."
-            "May this release bring us one step closer to our goal."
-            "The work continues, and I remain committed to seeing it through."
-            "Please consult the details above for the full account of this release."
-            "Let us carry this progress forward."
-            "Until our next report, remain steadfast."
-            "I am grateful to everyone helping this project move forward."
-            "More work lies ahead. For now, this milestone is yours to explore."
-            "Stay attentive; further developments will be shared here."
-            "Let our next steps be as deliberate as the last."
+          UPDATE_PHRASES=(
+            "The Revenant Job System has received a new update. The details are available below."
+            "I bring word of a further update to the Revenant Job System."
+            "Our work continues. A new RJS update is ready for review."
+            "The project has advanced with another update. Please see the details below."
+            "I am pleased to share the latest progress on the Revenant Job System."
+            "A new stage of work has been completed. The RJS update details follow."
           )
 
           if [ "$EVENT_NAME" = "release" ]; then
-            OPENING="${OPENINGS[$((RANDOM % ${#OPENINGS[@]}))]}"
-            CLOSING="${CLOSINGS[$((RANDOM % ${#CLOSINGS[@]}))]}"
+            OPENING="${RELEASE_PHRASES[$((RANDOM % ${#RELEASE_PHRASES[@]}))]}"
+            DOWNLOAD_URL="${ASSET_URL:-$RELEASE_URL}"
+            DESCRIPTION="Latest public release: ${TAG_NAME}"$'\n\n'"${RELEASE_BODY}"
 
-            CONTENT="@everyone"$'\n\n'"${OPENING}"
-            TITLE="Revenant Job System ${TAG_NAME}"
-            URL="$RELEASE_URL"
-
-            if [ -n "$RELEASE_BODY" ]; then
-              DESCRIPTION="${RELEASE_BODY}"$'\n\n'"${CLOSING}"
-            else
-              DESCRIPTION="$CLOSING"
+            if [ -n "$DOWNLOAD_URL" ]; then
+              DESCRIPTION="${DESCRIPTION}"$'\n\n'"[Download Revenant Job System ${TAG_NAME}](${DOWNLOAD_URL})"
             fi
 
-            send_discord_message "$CONTENT" "$TITLE" "$URL" "$DESCRIPTION" "true"
+            CONTENT="@everyone ${OPENING}"
+            TITLE="Revenant Job System ${TAG_NAME}"
+            send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" "true" ""
             exit 0
           fi
 
-          # Manual workflow_dispatch: a 12-message test batch based on RJS 3.4.4.
-          # The first six simulate release announcements (with @everyone).
-          # The last six simulate updates (without @everyone).
-          BASE_VERSION="3.4.4"
-          REPOSITORY_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System"
-
-          UPDATE_OPENINGS=(
-            "A further update has been made to the project. The current baseline remains version ${BASE_VERSION}."
-            "I have a progress report. Work on the Revenant Job System continues from version ${BASE_VERSION}."
-            "The project has received another adjustment. Please review the details of this update."
-            "Our work proceeds with care. This update builds upon the ${BASE_VERSION} release."
-            "There is a new development to report. The ${BASE_VERSION} baseline remains the point of reference."
-            "Allow me to report a further change to the project. The details are available below."
-          )
+          # Manual workflow_dispatch: phrase previews based on the latest public release v3.4.4.
+          # Every preview has pings disabled. Only a real published release can use @everyone.
+          BASE_TAG="v3.4.4"
+          BASE_TITLE="Revenant Job System ${BASE_TAG}"
+          BASE_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
+          DOWNLOAD_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/download/v3.4.4/Revenant.Job.System.3.4.4.7z"
+          BASE_NOTES="- Fixed game not loading at some passages into Rabanastre
+          - Claws are now Styles and they have unique Elements and one unique into Time Style with Updated Icons
+          - Load Screen Remade with Golden Forged Lion
+          - Clan Menu Screen uses Beta Image
+          - Arrows, Bombs and even the Shots have Properly name, not just a Short thing to fix all
+          Note: the names of the Ammunation was not the error, the error was with a file inside the Map Files, leftover of some descarted devlopment."
+          BASE_DESCRIPTION="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
 
           for i in 0 1 2 3 4 5; do
             number=$((i + 1))
-            opening="${OPENINGS[$((i * 2))]}"
-            closing="${CLOSINGS[$((i * 2))]}"
-            content="@everyone"$'\n\n'"[FIRE TEST ${number}/6] ${opening}"
-            title="RJS ${BASE_VERSION} | Basch Release Test ${number}/6"
-            description="Simulation based on the current ${BASE_VERSION} baseline. This is a test announcement, not a new release."$'\n\n'"${closing}"
-
-            send_discord_message "$content" "$title" "$REPOSITORY_URL/releases" "$description" "true"
-            echo "Sent release-style fire test ${number}/6."
+            content="${RELEASE_PHRASES[$i]}"
+            footer="Basch phrasing preview • Release style ${number}/6 • No ping"
+            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
+            echo "Sent release-style phrase preview ${number}/6 (without @everyone)."
             sleep 1
           done
 
           for i in 0 1 2 3 4 5; do
             number=$((i + 1))
-            content="[UPDATE TEST ${number}/6] ${UPDATE_OPENINGS[$i]}"
-            title="RJS ${BASE_VERSION} | Basch Update Test ${number}/6"
-            description="Simulation based on the current ${BASE_VERSION} baseline. This is an update test only; no new release is being announced."
-
-            send_discord_message "$content" "$title" "$REPOSITORY_URL" "$description" "false"
-            echo "Sent update test ${number}/6 (without @everyone)."
+            content="${UPDATE_PHRASES[$i]}"
+            footer="Basch phrasing preview • Update style ${number}/6 • No ping"
+            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
+            echo "Sent update-style phrase preview ${number}/6 (without @everyone)."
             sleep 1
           done
 
-          echo "Completed all 12 Basch announcement tests."
+          echo "Completed 12 Basch phrasing previews based on ${BASE_TAG}; all mentions disabled."
