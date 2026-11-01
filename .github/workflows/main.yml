@@ -53,13 +53,8 @@ jobs:
             local title="$2"
             local url="$3"
             local description="$4"
-            local allow_everyone="$5"
-            local footer="$6"
+            local footer="$5"
             local mention_rules='[]'
-
-            if [ "$allow_everyone" = "true" ]; then
-              mention_rules='["everyone"]'
-            fi
 
             local payload
             payload=$(jq -n \
@@ -101,9 +96,9 @@ jobs:
               DESCRIPTION="${DESCRIPTION}"$'\n\n'"[Download Revenant Job System ${TAG_NAME}](${DOWNLOAD_URL})"
             fi
 
-            CONTENT="@everyone"$'\n\n'"${ANNOUNCEMENT}"
+            CONTENT="$ANNOUNCEMENT"
             TITLE="Revenant Job System ${TAG_NAME}"
-            send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" "true" ""
+            send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" ""
             echo "Published official release announcement."
             exit 0
           fi
@@ -122,5 +117,5 @@ jobs:
           
           Note: The ammunition names were not the cause of the loading issue; it was a leftover file in Map Files from discarded development."
           BASE_DESCRIPTION="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
-          send_discord_message "$ANNOUNCEMENT" "Revenant Job System Update • ${BASE_TAG}" "$BASE_URL" "$BASE_DESCRIPTION" "false" "Official Update • Basch"
+          send_discord_message "$ANNOUNCEMENT" "Revenant Job System Update • ${BASE_TAG}" "$BASE_URL" "$BASE_DESCRIPTION" "Official Update • Basch"
           echo "Published exactly one Update announcement; all mentions disabled."
