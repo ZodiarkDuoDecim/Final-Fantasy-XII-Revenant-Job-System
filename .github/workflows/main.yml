@@ -5,12 +5,19 @@ on:
     types: [published]
   workflow_dispatch:
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
+      - name: Load Basch phrase bank
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
       - name: Publish official RJS announcement or preview Basch phrasing
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -26,6 +33,30 @@ jobs:
             echo "Discord webhook secret is missing."
             exit 1
           fi
+
+          PHRASE_BANK=".github/basch-phrases.json"
+          if [ ! -f "$PHRASE_BANK" ]; then
+            echo "Basch phrase bank is missing: $PHRASE_BANK"
+            exit 1
+          fi
+
+          mapfile -t RELEASE_OPENERS < <(jq -r '.release_openers[]' "$PHRASE_BANK")
+          mapfile -t RELEASE_CLOSERS < <(jq -r '.release_closers[]' "$PHRASE_BANK")
+          mapfile -t UPDATE_OPENERS < <(jq -r '.update_openers[]' "$PHRASE_BANK")
+          mapfile -t UPDATE_CLOSERS < <(jq -r '.update_closers[]' "$PHRASE_BANK")
+
+          for group in RELEASE_OPENERS RELEASE_CLOSERS UPDATE_OPENERS UPDATE_CLOSERS; do
+            eval "count=\${#${group}[@]}"
+            if [ "$count" -ne 128 ]; then
+              echo "Expected 128 phrases in $group, found $count."
+              exit 1
+            fi
+          done
+
+          pick_random() {
+            local -n phrase_array="$1"
+            printf '%s' "${phrase_array[$((RANDOM % ${#phrase_array[@]}))]}"
+          }
 
           send_discord_message() {
             local content="$1"
@@ -66,47 +97,27 @@ jobs:
               -o /dev/null
           }
 
-          RELEASE_PHRASES=(
-            "🚀 The latest Revenant Job System release is here!"
-            "🚀 I am pleased to report that a new RJS release is now available."
-            "🚀 The work continues. The latest Revenant Job System release is ready."
-            "🚀 Another milestone has been reached. The latest RJS release is here."
-            "🚀 I bring good news: a new Revenant Job System release is now available."
-            "🚀 The latest work on the Revenant Job System is now available to all."
-            "🚀 The Revenant Job System advances with a new release."
-            "🚀 I have news for those following the project: the latest RJS release is available."
-            "🚀 Our latest work is ready. The new Revenant Job System release is now available."
-            "🚀 A new stage in the Revenant Job System's development is ready to explore."
-            "🚀 The newest RJS release has arrived. Its details are recorded below."
-            "🚀 I report that the latest Revenant Job System release is now published."
-          )
-
-          UPDATE_PHRASES=(
-            "The Revenant Job System has received a new update. The details are available below."
-            "I bring word of a further update to the Revenant Job System."
-            "Our work continues. A new RJS update is ready for review."
-            "The project has advanced with another update. Please see the details below."
-            "I am pleased to share the latest progress on the Revenant Job System."
-            "A new stage of work has been completed. The RJS update details follow."
-          )
-
           if [ "$EVENT_NAME" = "release" ]; then
-            OPENING="${RELEASE_PHRASES[$((RANDOM % ${#RELEASE_PHRASES[@]}))]}"
+            OPENING="$(pick_random RELEASE_OPENERS)"
+            CLOSING="$(pick_random RELEASE_CLOSERS)"
             DOWNLOAD_URL="${ASSET_URL:-$RELEASE_URL}"
-            DESCRIPTION="Latest public release: ${TAG_NAME}"$'\n\n'"${RELEASE_BODY}"
 
+            DESCRIPTION="Latest public release: ${TAG_NAME}"$'\n\n'"${RELEASE_BODY}"
+            if [ -n "$CLOSING" ]; then
+              DESCRIPTION="${DESCRIPTION}"$'\n\n'"${CLOSING}"
+            fi
             if [ -n "$DOWNLOAD_URL" ]; then
               DESCRIPTION="${DESCRIPTION}"$'\n\n'"[Download Revenant Job System ${TAG_NAME}](${DOWNLOAD_URL})"
             fi
 
-            CONTENT="@everyone ${OPENING}"
+            CONTENT="@everyone 🚀 ${OPENING}"
             TITLE="Revenant Job System ${TAG_NAME}"
             send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" "true" ""
             exit 0
           fi
 
-          # Manual workflow_dispatch: phrase previews based on the latest public release v3.4.4.
-          # Every preview has pings disabled. Only a real published release can use @everyone.
+          # Manual workflow_dispatch: 12 style previews using the latest public release v3.4.4.
+          # Preview messages preserve the official release embed and ALWAYS disable all mentions.
           BASE_TAG="v3.4.4"
           BASE_TITLE="Revenant Job System ${BASE_TAG}"
           BASE_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
@@ -117,24 +128,34 @@ jobs:
           - Clan Menu Screen uses Beta Image
           - Arrows, Bombs and even the Shots have Properly name, not just a Short thing to fix all
           Note: the names of the Ammunation was not the error, the error was with a file inside the Map Files, leftover of some descarted devlopment."
-          BASE_DESCRIPTION="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
+
+          mapfile -t TEST_RELEASE_OPENERS < <(printf '%s\n' "${RELEASE_OPENERS[@]}" | shuf -n 6)
+          mapfile -t TEST_UPDATE_OPENERS < <(printf '%s\n' "${UPDATE_OPENERS[@]}" | shuf -n 6)
 
           for i in 0 1 2 3 4 5; do
             number=$((i + 1))
-            content="${RELEASE_PHRASES[$i]}"
-            footer="Basch phrasing preview • Release style ${number}/6 • No ping"
-            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
-            echo "Sent release-style phrase preview ${number}/6 (without @everyone)."
+            opening="${TEST_RELEASE_OPENERS[$i]}"
+            closing="$(pick_random RELEASE_CLOSERS)"
+            content="🚀 ${opening}"
+            description="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"${closing}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
+            footer="Basch voice preview • Release ${number}/6 • No ping"
+
+            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$description" "false" "$footer"
+            echo "Sent release-style phrase preview ${number}/6 (all mentions disabled)."
             sleep 1
           done
 
           for i in 0 1 2 3 4 5; do
             number=$((i + 1))
-            content="${UPDATE_PHRASES[$i]}"
-            footer="Basch phrasing preview • Update style ${number}/6 • No ping"
-            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$BASE_DESCRIPTION" "false" "$footer"
-            echo "Sent update-style phrase preview ${number}/6 (without @everyone)."
+            opening="${TEST_UPDATE_OPENERS[$i]}"
+            closing="$(pick_random UPDATE_CLOSERS)"
+            content="${opening}"
+            description="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"${closing}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
+            footer="Basch voice preview • Update ${number}/6 • No ping"
+
+            send_discord_message "$content" "$BASE_TITLE" "$BASE_URL" "$description" "false" "$footer"
+            echo "Sent update-style phrase preview ${number}/6 (all mentions disabled)."
             sleep 1
           done
 
-          echo "Completed 12 Basch phrasing previews based on ${BASE_TAG}; all mentions disabled."
+          echo "Completed 12 Basch previews from the 512-line phrase bank; all mentions disabled."
