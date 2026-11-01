@@ -4,11 +4,15 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/main.yml
 
 permissions: {}
 
 jobs:
   announce:
+    if: github.event_name != 'push' || github.event.head_commit.message == 'Basch style previews [one-time]'
     runs-on: ubuntu-latest
     steps:
       - name: Publish official RJS announcement or preview Basch phrasing
