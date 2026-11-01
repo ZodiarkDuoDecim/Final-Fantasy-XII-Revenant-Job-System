@@ -5,55 +5,117 @@ on:
     types: [published]
   workflow_dispatch:
 
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
-      - name: Announce RJS release or test Discord delivery
+      - name: Load Basch announcement library
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Publish official RJS announcement or one update
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           EVENT_NAME: ${{ github.event_name }}
           TAG_NAME: ${{ github.event.release.tag_name }}
           RELEASE_URL: ${{ github.event.release.html_url }}
           RELEASE_BODY: ${{ github.event.release.body }}
+          ASSET_URL: ${{ github.event.release.assets[0].browser_download_url }}
         run: |
+          set -e
+
           if [ -z "$DISCORD_WEBHOOK_URL" ]; then
             echo "Discord webhook secret is missing."
             exit 1
           fi
 
-          if [ "$EVENT_NAME" = "release" ]; then
-            CONTENT="@everyone 🚀 New RJS Release Available!"
-            TITLE="Revenant Job System ${TAG_NAME}"
-            URL="$RELEASE_URL"
-            DESCRIPTION="$RELEASE_BODY"
-          else
-            CONTENT="🧪 RJS Discord integration test — no action needed."
-            TITLE="Discord webhook test successful"
-            URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/actions"
-            DESCRIPTION="Automated test from GitHub Actions. This verifies the webhook connection and message formatting. No release announcement is being made."
+          ANNOUNCEMENT_BANK=".github/basch-announcements.json"
+          if [ ! -f "$ANNOUNCEMENT_BANK" ]; then
+            echo "Basch announcement library is missing."
+            exit 1
           fi
 
-          PAYLOAD=$(jq -n \
-            --arg content "$CONTENT" \
-            --arg title "$TITLE" \
-            --arg url "$URL" \
-            --arg description "$DESCRIPTION" \
-            '{
-              content: $content,
-              allowed_mentions: {
-                parse: (if ($content | contains("@everyone")) then ["everyone"] else [] end)
-              },
-              embeds: [{
-                title: $title,
-                url: $url,
-                description: ($description | .[0:3900])
-              }]
-            }')
+          mapfile -t RELEASE_MESSAGES < <(jq -r '.release_announcements[] | @base64' "$ANNOUNCEMENT_BANK")
+          mapfile -t UPDATE_MESSAGES < <(jq -r '.update_announcements[] | @base64' "$ANNOUNCEMENT_BANK")
 
-          curl -fsS \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "$DISCORD_WEBHOOK_URL"
+          if [ "${#RELEASE_MESSAGES[@]}" -ne 256 ] || [ "${#UPDATE_MESSAGES[@]}" -ne 256 ]; then
+            echo "Expected 256 complete announcements in each category."
+            exit 1
+          fi
+
+          send_discord_message() {
+            local content="$1"
+            local title="$2"
+            local url="$3"
+            local description="$4"
+            local footer="$5"
+            local mention_rules='[]'
+
+            local payload
+            payload=$(jq -n \
+              --arg content "$content" \
+              --arg title "$title" \
+              --arg url "$url" \
+              --arg description "$description" \
+              --arg footer "$footer" \
+              --argjson mentions "$mention_rules" \
+              '{
+                content: $content,
+                allowed_mentions: { parse: $mentions },
+                embeds: [{
+                  title: $title,
+                  url: $url,
+                  description: ($description | .[0:3900]),
+                  footer: (if $footer == "" then null else { text: $footer } end)
+                }]
+              }')
+
+            curl -fsS \
+              -H "Content-Type: application/json" \
+              -d "$payload" \
+              "$DISCORD_WEBHOOK_URL" \
+              -o /dev/null
+          }
+
+          decode_announcement() {
+            printf '%s' "$1" | base64 --decode | jq -r '.body'
+          }
+
+          if [ "$EVENT_NAME" = "release" ]; then
+            INDEX=$((RANDOM % ${#RELEASE_MESSAGES[@]}))
+            ANNOUNCEMENT="$(decode_announcement "${RELEASE_MESSAGES[$INDEX]}")"
+            DOWNLOAD_URL="${ASSET_URL:-$RELEASE_URL}"
+            DESCRIPTION="$RELEASE_BODY"
+
+            if [ -n "$DOWNLOAD_URL" ]; then
+              DESCRIPTION="${DESCRIPTION}"$'\n\n'"[Download Revenant Job System ${TAG_NAME}](${DOWNLOAD_URL})"
+            fi
+
+            CONTENT="$ANNOUNCEMENT"
+            TITLE="Revenant Job System ${TAG_NAME}"
+            send_discord_message "$CONTENT" "$TITLE" "$RELEASE_URL" "$DESCRIPTION" ""
+            echo "Published official release announcement."
+            exit 0
+          fi
+
+          # A manual run or the one-time guarded push publishes exactly one Update.
+          INDEX=$((RANDOM % ${#UPDATE_MESSAGES[@]}))
+          ANNOUNCEMENT="$(decode_announcement "${UPDATE_MESSAGES[$INDEX]}")"
+          BASE_TAG="v3.4.4"
+          BASE_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/tag/v3.4.4"
+          DOWNLOAD_URL="https://github.com/ZodiarkDuoDecim/Final-Fantasy-XII-Revenant-Job-System/releases/download/v3.4.4/Revenant.Job.System.3.4.4.7z"
+          BASE_NOTES="- Fixed game not loading at some passages into Rabanastre
+          - Claws are now Styles and have unique Elements, including a unique Time Style, with updated icons
+          - Remade the Load Screen with the Golden Forged Lion
+          - Updated the Clan Menu Screen with the Beta image
+          - Corrected the names of Arrows, Bombs, and Shots
+          
+          Note: The ammunition names were not the cause of the loading issue; it was a leftover file in Map Files from discarded development."
+          BASE_DESCRIPTION="Latest public release: ${BASE_TAG}"$'\n\n'"${BASE_NOTES}"$'\n\n'"[Download Revenant Job System ${BASE_TAG}](${DOWNLOAD_URL})"
+          send_discord_message "$ANNOUNCEMENT" "Revenant Job System Update • ${BASE_TAG}" "$BASE_URL" "$BASE_DESCRIPTION" "Official Update • Basch"
+          echo "Published exactly one Update announcement; all mentions disabled."
