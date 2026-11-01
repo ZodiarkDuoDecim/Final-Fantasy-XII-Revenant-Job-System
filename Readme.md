@@ -237,6 +237,22 @@ More screenshots, gameplay previews, documentation, balance refinements, and add
 
 ---
 
+# Join Our Discord
+
+<p align="center">
+  <a href="https://discord.com/widget?id=1086738678354821281&theme=dark">
+    <img src="https://discord.com/api/guilds/1086738678354821281/widget.png?style=banner2"
+         alt="Revenant Job System Discord Server"
+         width="350">
+  </a>
+</p>
+
+<p align="center">
+  Join the community to follow Revenant Job System development, discuss the project, and receive release updates.
+</p>
+
+---
+
 # Ownership, Credits & Permissions
 
 Revenant Job System is a fan-made modification created for **Final Fantasy XII International Zodiac Job System**.
