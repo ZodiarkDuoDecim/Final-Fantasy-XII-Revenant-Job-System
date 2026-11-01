@@ -25,10 +25,56 @@ jobs:
           fi
 
           if [ "$EVENT_NAME" = "release" ]; then
-            CONTENT="@everyone 🚀 New RJS Release Available!"
+            # Basch's voice: composed, honorable, and direct.
+            # Each release receives a randomly selected opening and closing.
+            OPENINGS=(
+              "I bring word of a new milestone in the Revenant Job System's development."
+              "Our work advances. A new release of the Revenant Job System is now available."
+              "The latest stage of our efforts has been completed. The new release is ready."
+              "I am pleased to report that a new RJS release has been published."
+              "There is progress to report: the Revenant Job System has received a new release."
+              "The path forward is clear. A new RJS release is now available."
+              "Those who have followed our progress will find a new release awaiting them."
+              "Another milestone has been reached. The latest version is ready for review."
+              "I have come to share news of our latest work: a new release is available."
+              "The project moves forward with another release. Its details follow."
+              "Our efforts have yielded another result. The new version is now published."
+              "Let it be known: a new release of the Revenant Job System is available."
+              "We have made further progress. The latest RJS release can now be examined."
+              "The latest work has been made available to all who follow this project."
+              "I report that the project has advanced once more. A new version awaits."
+              "A new release has been published. The changes are recorded below."
+              "The development continues with purpose. The latest release is now available."
+              "I have news worth sharing: the Revenant Job System has taken another step forward."
+            )
+
+            CLOSINGS=(
+              "Review the release notes before proceeding; every change has its purpose."
+              "Thank you to all who continue to follow and support this work."
+              "Your continued support is valued. We shall press on."
+              "May this release bring us one step closer to our goal."
+              "The work continues, and I remain committed to seeing it through."
+              "Please consult the details above for the full account of this release."
+              "Let us carry this progress forward."
+              "Until our next report, remain steadfast."
+              "I am grateful to everyone helping this project move forward."
+              "More work lies ahead. For now, this milestone is yours to explore."
+              "Stay attentive; further developments will be shared here."
+              "Let our next steps be as deliberate as the last."
+            )
+
+            OPENING="${OPENINGS[$((RANDOM % ${#OPENINGS[@]}))]}"
+            CLOSING="${CLOSINGS[$((RANDOM % ${#CLOSINGS[@]}))]}"
+
+            CONTENT="@everyone"$'\n\n'"${OPENING}"
             TITLE="Revenant Job System ${TAG_NAME}"
             URL="$RELEASE_URL"
-            DESCRIPTION="$RELEASE_BODY"
+
+            if [ -n "$RELEASE_BODY" ]; then
+              DESCRIPTION="${RELEASE_BODY}"$'\n\n'"${CLOSING}"
+            else
+              DESCRIPTION="$CLOSING"
+            fi
           else
             CONTENT="🧪 RJS Discord integration test — no action needed."
             TITLE="Discord webhook test successful"
